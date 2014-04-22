@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		928A701118E9432F00392A6F /* OpenOnderwijsAPIclient */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 928A701218E9432F00392A6F /* Build configuration list for PBXAggregateTarget "OpenOnderwijsAPIclient" */;
+			buildPhases = (
+				928A701518E9434100392A6F /* ShellScript */,
+			);
+			dependencies = (
+				928A701A18E9465D00392A6F /* PBXTargetDependency */,
+			);
+			name = OpenOnderwijsAPIclient;
+			productName = OpenOnderwijsAPIclient;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		928A6FE418E9407000392A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FE318E9407000392A6F /* XCTest.framework */; };
+		928A6FE518E9407000392A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCA18E9406F00392A6F /* Foundation.framework */; };
+		928A6FE618E9407000392A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCE18E9406F00392A6F /* UIKit.framework */; };
+		928A6FF018E9407000392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A6FEF18E9407000392A6F /* OpenOnderwijsAPI_objcTests.m */; };
+		928A700D18E9423800392A6F /* ODAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A700C18E9423800392A6F /* ODAClient.m */; };
+		928A700F18E942E000392A6F /* ODAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 928A700B18E9423800392A6F /* ODAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928A701018E942E000392A6F /* OpenOnderwijsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 928A6FD918E9406F00392A6F /* OpenOnderwijsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928A701818E944F800392A6F /* ODAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A700C18E9423800392A6F /* ODAClient.m */; };
+		928A701D18E949FD00392A6F /* ODAPersonsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A701C18E949FD00392A6F /* ODAPersonsClient.m */; };
+		928A702118E94AF800392A6F /* ODAPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A702018E94AF800392A6F /* ODAPerson.m */; };
+		928A702218E94C5B00392A6F /* ODAPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 928A701F18E94AF800392A6F /* ODAPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928A702318E94C5B00392A6F /* ODAPersonsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 928A701B18E949FD00392A6F /* ODAPersonsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98C819055C450095E5A9 /* ODAAbstractClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98C719055C450095E5A9 /* ODAAbstractClient.m */; };
+		92CD98CA190561130095E5A9 /* ODAAbstractClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98C619055C450095E5A9 /* ODAAbstractClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98CD190567510095E5A9 /* ODARequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98CC190567510095E5A9 /* ODARequestOperation.m */; };
+		92CD98CE1905AE4E0095E5A9 /* ODAPersonsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A701C18E949FD00392A6F /* ODAPersonsClient.m */; };
+		92CD98CF1905AE520095E5A9 /* ODAAbstractClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98C719055C450095E5A9 /* ODAAbstractClient.m */; };
+		92CD98D01905AE5E0095E5A9 /* ODAPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A702018E94AF800392A6F /* ODAPerson.m */; };
+		92CD98D11905AE920095E5A9 /* ODARequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98CC190567510095E5A9 /* ODARequestOperation.m */; };
+		92CD98D51905B3DB0095E5A9 /* ODAPersonDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98D31905B3DB0095E5A9 /* ODAPersonDeserializer.h */; };
+		92CD98D61905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D41905B3DB0095E5A9 /* ODAPersonDeserializer.m */; };
+		92CD98D71905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D41905B3DB0095E5A9 /* ODAPersonDeserializer.m */; };
+		92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98D81905B5AE0095E5A9 /* ODABaseDeserializer.h */; };
+		92CD98DB1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */; };
+		92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */; };
+		92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98DD1905BABA0095E5A9 /* ODAGroup.h */; };
+		92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98DE1905BABA0095E5A9 /* ODAGroup.m */; };
+		92CD98E11905BABA0095E5A9 /* ODAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98DE1905BABA0095E5A9 /* ODAGroup.m */; };
+		92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98E21905BB500095E5A9 /* ODAEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98E51905BB500095E5A9 /* ODAEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98E31905BB500095E5A9 /* ODAEntity.m */; };
+		92CD98E61905BB500095E5A9 /* ODAEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98E31905BB500095E5A9 /* ODAEntity.m */; };
+		92CD98EA1905BBCC0095E5A9 /* ODAGroupDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98E81905BBCC0095E5A9 /* ODAGroupDeserializer.h */; };
+		92CD98EB1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98E91905BBCC0095E5A9 /* ODAGroupDeserializer.m */; };
+		92CD98EC1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98E91905BBCC0095E5A9 /* ODAGroupDeserializer.m */; };
+		92CD98EF190637830095E5A9 /* ODAParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98ED190637830095E5A9 /* ODAParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98F0190637830095E5A9 /* ODAParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98EE190637830095E5A9 /* ODAParameters.m */; };
+		92CD98F1190637830095E5A9 /* ODAParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98EE190637830095E5A9 /* ODAParameters.m */; };
+		92CD98F4190640750095E5A9 /* ODABuildingsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98F2190640750095E5A9 /* ODABuildingsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98F5190640750095E5A9 /* ODABuildingsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98F3190640750095E5A9 /* ODABuildingsClient.m */; };
+		92CD98F6190640750095E5A9 /* ODABuildingsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98F3190640750095E5A9 /* ODABuildingsClient.m */; };
+		92CD98F91906429B0095E5A9 /* ODABuilding.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98F71906429B0095E5A9 /* ODABuilding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD98FA1906429B0095E5A9 /* ODABuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98F81906429B0095E5A9 /* ODABuilding.m */; };
+		92CD98FB1906429B0095E5A9 /* ODABuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98F81906429B0095E5A9 /* ODABuilding.m */; };
+		92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */; };
+		92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */; };
+		92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		928A701918E9465D00392A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 928A6FBF18E9406F00392A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 928A6FFC18E940B800392A6F;
+			remoteInfo = OpenOnderwijsAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		928A6FCA18E9406F00392A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		928A6FCC18E9406F00392A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		928A6FCE18E9406F00392A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		928A6FD818E9406F00392A6F /* OpenOnderwijsAPI-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenOnderwijsAPI-objc-Prefix.pch"; sourceTree = "<group>"; };
+		928A6FD918E9406F00392A6F /* OpenOnderwijsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenOnderwijsAPI.h; sourceTree = "<group>"; };
+		928A6FDC18E9406F00392A6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		928A6FE218E9407000392A6F /* OpenOnderwijsAPI-objcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenOnderwijsAPI-objcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928A6FE318E9407000392A6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		928A6FEB18E9407000392A6F /* OpenOnderwijsAPI-objcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenOnderwijsAPI-objcTests-Info.plist"; sourceTree = "<group>"; };
+		928A6FED18E9407000392A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		928A6FEF18E9407000392A6F /* OpenOnderwijsAPI_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenOnderwijsAPI_objcTests.m; sourceTree = "<group>"; };
+		928A6FFD18E940B800392A6F /* OpenOnderwijsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenOnderwijsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		928A6FFE18E940B800392A6F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		928A700B18E9423800392A6F /* ODAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAClient.h; sourceTree = "<group>"; };
+		928A700C18E9423800392A6F /* ODAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAClient.m; sourceTree = "<group>"; };
+		928A701B18E949FD00392A6F /* ODAPersonsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAPersonsClient.h; sourceTree = "<group>"; };
+		928A701C18E949FD00392A6F /* ODAPersonsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAPersonsClient.m; sourceTree = "<group>"; };
+		928A701F18E94AF800392A6F /* ODAPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAPerson.h; sourceTree = "<group>"; };
+		928A702018E94AF800392A6F /* ODAPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAPerson.m; sourceTree = "<group>"; };
+		92CD98C619055C450095E5A9 /* ODAAbstractClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAAbstractClient.h; sourceTree = "<group>"; };
+		92CD98C719055C450095E5A9 /* ODAAbstractClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAAbstractClient.m; sourceTree = "<group>"; };
+		92CD98C9190560760095E5A9 /* ODAAbstractClient-Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ODAAbstractClient-Protected.h"; sourceTree = "<group>"; };
+		92CD98CB190567510095E5A9 /* ODARequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODARequestOperation.h; sourceTree = "<group>"; };
+		92CD98CC190567510095E5A9 /* ODARequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODARequestOperation.m; sourceTree = "<group>"; };
+		92CD98D31905B3DB0095E5A9 /* ODAPersonDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAPersonDeserializer.h; sourceTree = "<group>"; };
+		92CD98D41905B3DB0095E5A9 /* ODAPersonDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAPersonDeserializer.m; sourceTree = "<group>"; };
+		92CD98D81905B5AE0095E5A9 /* ODABaseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABaseDeserializer.h; sourceTree = "<group>"; };
+		92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABaseDeserializer.m; sourceTree = "<group>"; };
+		92CD98DD1905BABA0095E5A9 /* ODAGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroup.h; sourceTree = "<group>"; };
+		92CD98DE1905BABA0095E5A9 /* ODAGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroup.m; sourceTree = "<group>"; };
+		92CD98E21905BB500095E5A9 /* ODAEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAEntity.h; sourceTree = "<group>"; };
+		92CD98E31905BB500095E5A9 /* ODAEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAEntity.m; sourceTree = "<group>"; };
+		92CD98E81905BBCC0095E5A9 /* ODAGroupDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroupDeserializer.h; sourceTree = "<group>"; };
+		92CD98E91905BBCC0095E5A9 /* ODAGroupDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroupDeserializer.m; sourceTree = "<group>"; };
+		92CD98ED190637830095E5A9 /* ODAParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAParameters.h; sourceTree = "<group>"; };
+		92CD98EE190637830095E5A9 /* ODAParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAParameters.m; sourceTree = "<group>"; };
+		92CD98F2190640750095E5A9 /* ODABuildingsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABuildingsClient.h; sourceTree = "<group>"; };
+		92CD98F3190640750095E5A9 /* ODABuildingsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABuildingsClient.m; sourceTree = "<group>"; };
+		92CD98F71906429B0095E5A9 /* ODABuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABuilding.h; sourceTree = "<group>"; };
+		92CD98F81906429B0095E5A9 /* ODABuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABuilding.m; sourceTree = "<group>"; };
+		92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABuildingDeserializer.h; sourceTree = "<group>"; };
+		92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABuildingDeserializer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		928A6FDF18E9407000392A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6FE418E9407000392A6F /* XCTest.framework in Frameworks */,
+				928A6FE618E9407000392A6F /* UIKit.framework in Frameworks */,
+				928A6FE518E9407000392A6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6FFA18E940B800392A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		928A6FBE18E9406F00392A6F = {
+			isa = PBXGroup;
+			children = (
+				928A6FD018E9406F00392A6F /* OpenOnderwijsAPI-objc */,
+				928A6FE918E9407000392A6F /* OpenOnderwijsAPI-objcTests */,
+				928A6FC918E9406F00392A6F /* Frameworks */,
+				928A6FC818E9406F00392A6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		928A6FC818E9406F00392A6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928A6FE218E9407000392A6F /* OpenOnderwijsAPI-objcTests.xctest */,
+				928A6FFD18E940B800392A6F /* OpenOnderwijsAPI.framework */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		928A6FC918E9406F00392A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				928A6FCA18E9406F00392A6F /* Foundation.framework */,
+				928A6FCC18E9406F00392A6F /* CoreGraphics.framework */,
+				928A6FCE18E9406F00392A6F /* UIKit.framework */,
+				928A6FE318E9407000392A6F /* XCTest.framework */,
+				928A6FFE18E940B800392A6F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		928A6FD018E9406F00392A6F /* OpenOnderwijsAPI-objc */ = {
+			isa = PBXGroup;
+			children = (
+				928A700A18E9415300392A6F /* Classes */,
+				928A6FD918E9406F00392A6F /* OpenOnderwijsAPI.h */,
+				928A6FDC18E9406F00392A6F /* Images.xcassets */,
+				928A6FD118E9406F00392A6F /* Supporting Files */,
+			);
+			path = "OpenOnderwijsAPI-objc";
+			sourceTree = "<group>";
+		};
+		928A6FD118E9406F00392A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				928A6FD818E9406F00392A6F /* OpenOnderwijsAPI-objc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		928A6FE918E9407000392A6F /* OpenOnderwijsAPI-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				928A6FEF18E9407000392A6F /* OpenOnderwijsAPI_objcTests.m */,
+				928A6FEA18E9407000392A6F /* Supporting Files */,
+			);
+			path = "OpenOnderwijsAPI-objcTests";
+			sourceTree = "<group>";
+		};
+		928A6FEA18E9407000392A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				928A6FEB18E9407000392A6F /* OpenOnderwijsAPI-objcTests-Info.plist */,
+				928A6FEC18E9407000392A6F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		928A700A18E9415300392A6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92CD9901190645E20095E5A9 /* Clients */,
+				92CD98D21905B3C40095E5A9 /* Serializers */,
+				928A701E18E94AE800392A6F /* Entities */,
+				928A700B18E9423800392A6F /* ODAClient.h */,
+				928A700C18E9423800392A6F /* ODAClient.m */,
+				92CD98CB190567510095E5A9 /* ODARequestOperation.h */,
+				92CD98CC190567510095E5A9 /* ODARequestOperation.m */,
+				92CD98ED190637830095E5A9 /* ODAParameters.h */,
+				92CD98EE190637830095E5A9 /* ODAParameters.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		928A701E18E94AE800392A6F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				928A701F18E94AF800392A6F /* ODAPerson.h */,
+				928A702018E94AF800392A6F /* ODAPerson.m */,
+				92CD98DD1905BABA0095E5A9 /* ODAGroup.h */,
+				92CD98DE1905BABA0095E5A9 /* ODAGroup.m */,
+				92CD98E21905BB500095E5A9 /* ODAEntity.h */,
+				92CD98E31905BB500095E5A9 /* ODAEntity.m */,
+				92CD98F71906429B0095E5A9 /* ODABuilding.h */,
+				92CD98F81906429B0095E5A9 /* ODABuilding.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		92CD98D21905B3C40095E5A9 /* Serializers */ = {
+			isa = PBXGroup;
+			children = (
+				92CD98D31905B3DB0095E5A9 /* ODAPersonDeserializer.h */,
+				92CD98D41905B3DB0095E5A9 /* ODAPersonDeserializer.m */,
+				92CD98D81905B5AE0095E5A9 /* ODABaseDeserializer.h */,
+				92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */,
+				92CD98E81905BBCC0095E5A9 /* ODAGroupDeserializer.h */,
+				92CD98E91905BBCC0095E5A9 /* ODAGroupDeserializer.m */,
+				92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */,
+				92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */,
+			);
+			name = Serializers;
+			sourceTree = "<group>";
+		};
+		92CD9901190645E20095E5A9 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				928A701B18E949FD00392A6F /* ODAPersonsClient.h */,
+				928A701C18E949FD00392A6F /* ODAPersonsClient.m */,
+				92CD98C619055C450095E5A9 /* ODAAbstractClient.h */,
+				92CD98C719055C450095E5A9 /* ODAAbstractClient.m */,
+				92CD98C9190560760095E5A9 /* ODAAbstractClient-Protected.h */,
+				92CD98F2190640750095E5A9 /* ODABuildingsClient.h */,
+				92CD98F3190640750095E5A9 /* ODABuildingsClient.m */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		928A700E18E942A200392A6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */,
+				92CD98EF190637830095E5A9 /* ODAParameters.h in Headers */,
+				928A700F18E942E000392A6F /* ODAClient.h in Headers */,
+				92CD98F4190640750095E5A9 /* ODABuildingsClient.h in Headers */,
+				92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */,
+				92CD98F91906429B0095E5A9 /* ODABuilding.h in Headers */,
+				92CD98EA1905BBCC0095E5A9 /* ODAGroupDeserializer.h in Headers */,
+				928A701018E942E000392A6F /* OpenOnderwijsAPI.h in Headers */,
+				928A702318E94C5B00392A6F /* ODAPersonsClient.h in Headers */,
+				928A702218E94C5B00392A6F /* ODAPerson.h in Headers */,
+				92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */,
+				92CD98CA190561130095E5A9 /* ODAAbstractClient.h in Headers */,
+				92CD98D51905B3DB0095E5A9 /* ODAPersonDeserializer.h in Headers */,
+				92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		928A6FE118E9407000392A6F /* OpenOnderwijsAPI-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928A6FF618E9407000392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-objcTests" */;
+			buildPhases = (
+				928A6FDE18E9407000392A6F /* Sources */,
+				928A6FDF18E9407000392A6F /* Frameworks */,
+				928A6FE018E9407000392A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenOnderwijsAPI-objcTests";
+			productName = "OpenOnderwijsAPI-objcTests";
+			productReference = 928A6FE218E9407000392A6F /* OpenOnderwijsAPI-objcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		928A6FFC18E940B800392A6F /* OpenOnderwijsAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928A700718E940B800392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI" */;
+			buildPhases = (
+				928A6FF918E940B800392A6F /* Sources */,
+				928A6FFA18E940B800392A6F /* Frameworks */,
+				928A6FFB18E940B800392A6F /* Resources */,
+				928A700E18E942A200392A6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenOnderwijsAPI;
+			productName = OpenOnderwijsAPI;
+			productReference = 928A6FFD18E940B800392A6F /* OpenOnderwijsAPI.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		928A6FBF18E9406F00392A6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ODA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = surfnet;
+				TargetAttributes = {
+					928A6FE118E9407000392A6F = {
+						TestTargetID = 928A6FFC18E940B800392A6F;
+					};
+				};
+			};
+			buildConfigurationList = 928A6FC218E9406F00392A6F /* Build configuration list for PBXProject "OpenOnderwijsAPI-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 928A6FBE18E9406F00392A6F;
+			productRefGroup = 928A6FC818E9406F00392A6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928A6FE118E9407000392A6F /* OpenOnderwijsAPI-objcTests */,
+				928A6FFC18E940B800392A6F /* OpenOnderwijsAPI */,
+				928A701118E9432F00392A6F /* OpenOnderwijsAPIclient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		928A6FE018E9407000392A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6FFB18E940B800392A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		928A701518E9434100392A6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=OpenOnderwijsAPI   # replace with your framework name\nFMK_VERSION=1   # replace with your version\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		928A6FDE18E9407000392A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CD98FA1906429B0095E5A9 /* ODABuilding.m in Sources */,
+				92CD98EB1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
+				92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */,
+				92CD98F0190637830095E5A9 /* ODAParameters.m in Sources */,
+				92CD98F5190640750095E5A9 /* ODABuildingsClient.m in Sources */,
+				928A6FF018E9407000392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */,
+				928A702118E94AF800392A6F /* ODAPerson.m in Sources */,
+				92CD98DB1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
+				928A700D18E9423800392A6F /* ODAClient.m in Sources */,
+				928A701D18E949FD00392A6F /* ODAPersonsClient.m in Sources */,
+				92CD98D61905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				92CD98E51905BB500095E5A9 /* ODAEntity.m in Sources */,
+				92CD98CD190567510095E5A9 /* ODARequestOperation.m in Sources */,
+				92CD98C819055C450095E5A9 /* ODAAbstractClient.m in Sources */,
+				92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6FF918E940B800392A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CD98F1190637830095E5A9 /* ODAParameters.m in Sources */,
+				92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
+				92CD98CF1905AE520095E5A9 /* ODAAbstractClient.m in Sources */,
+				92CD98D11905AE920095E5A9 /* ODARequestOperation.m in Sources */,
+				92CD98F6190640750095E5A9 /* ODABuildingsClient.m in Sources */,
+				92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
+				92CD98D71905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				92CD98FB1906429B0095E5A9 /* ODABuilding.m in Sources */,
+				92CD98D01905AE5E0095E5A9 /* ODAPerson.m in Sources */,
+				92CD98CE1905AE4E0095E5A9 /* ODAPersonsClient.m in Sources */,
+				92CD98E11905BABA0095E5A9 /* ODAGroup.m in Sources */,
+				92CD98EC1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
+				928A701818E944F800392A6F /* ODAClient.m in Sources */,
+				92CD98E61905BB500095E5A9 /* ODAEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		928A701A18E9465D00392A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 928A6FFC18E940B800392A6F /* OpenOnderwijsAPI */;
+			targetProxy = 928A701918E9465D00392A6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		928A6FEC18E9407000392A6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				928A6FED18E9407000392A6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		928A6FF118E9407000392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		928A6FF218E9407000392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		928A6FF718E9407000392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI.framework/OpenOnderwijsAPI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-objcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		928A6FF818E9407000392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI.framework/OpenOnderwijsAPI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-objcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		928A700818E940B800392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		928A700918E940B800392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		928A701318E9432F00392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		928A701418E9432F00392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928A6FC218E9406F00392A6F /* Build configuration list for PBXProject "OpenOnderwijsAPI-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A6FF118E9407000392A6F /* Debug */,
+				928A6FF218E9407000392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928A6FF618E9407000392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A6FF718E9407000392A6F /* Debug */,
+				928A6FF818E9407000392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928A700718E940B800392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A700818E940B800392A6F /* Debug */,
+				928A700918E940B800392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928A701218E9432F00392A6F /* Build configuration list for PBXAggregateTarget "OpenOnderwijsAPIclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A701318E9432F00392A6F /* Debug */,
+				928A701418E9432F00392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 928A6FBF18E9406F00392A6F /* Project object */;
+}
