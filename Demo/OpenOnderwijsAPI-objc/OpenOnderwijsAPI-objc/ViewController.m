@@ -92,44 +92,27 @@
     
     /**
      * ROOMS
-     */ /*
-    final TextView firstRoom = (TextView)findViewById(R.id.firstRoom);
-    final TextView numberOfRooms = (TextView)findViewById(R.id.numberOfRooms);
-    // get the data of the room with the ID '1'
-    apiClient.getRoomsClient().getById("1", null, new EntityHandler<Room>() {
+     */
+    [apiClient.roomsClient getById:@"1" onComplete:^(BOOL success, ODARoom *room) {
         
-        @Override
-        public void success(Room room) {
-            // display the result
-            firstRoom.setText("The first room has " + room.getTotalSeats() + " seats.");
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"The room with the ID '1' has %d seats", room.totalSeats]];
+        } else {
+            [self appendLog:@"Error in getting room with ID: '1' :-("];
         }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user if an error happened
-            firstRoom.setText("Error getting info about the first room :-(");
-            e.printStackTrace();
-        }
-    });
-    // we want to know how many rooms there are on the first page.
-    Params roomParams = new Params();
-    roomParams.setPage(1);
-    apiClient.getRoomsClient().getList(roomParams, new ListHandler<Room>() {
-        
-        @Override
-        public void success(List<Room> list) {
-            // display the result
-            numberOfRooms.setText("There are " + list.size() + " rooms on the first page.");
-        }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user if an error happened.
-            numberOfRooms.setText("Error in listing first page of room :-(");
-            e.printStackTrace();
-        }
-    });
+    }];
     
+    ODAParameters *roomParams = [[ODAParameters alloc] init];
+    roomParams.page = 1;
+    
+    [apiClient.roomsClient getList:roomParams onComplete:^(BOOL success, NSArray *roomList) {
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"There are %d rooms on the first page", [roomList count]]];
+        } else {
+            [self appendLog:@"Error in listing first page of rooms :-("];
+        }
+    }];
+        
     /**
      * GROUPS
      */ /*

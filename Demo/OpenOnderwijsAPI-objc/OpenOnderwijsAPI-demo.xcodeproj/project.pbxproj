@@ -1,1112 +1,523 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>12C5781B2C69434286D26F41</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3B2EA48586E24290A4C37EBA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OpenOnderwijsAPI-demo.xcconfig</string>
-			<key>path</key>
-			<string>../../Pods/Pods-OpenOnderwijsAPI-demo.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6ED118E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EE318E8B4CA00392A6F</string>
-				<string>928A6F0218E8B4CB00392A6F</string>
-				<string>928A6EDC18E8B4CA00392A6F</string>
-				<string>928A6EDB18E8B4CA00392A6F</string>
-				<string>3B2EA48586E24290A4C37EBA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6ED218E8B4CA00392A6F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>ODA</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>surfnet</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>928A6EFA18E8B4CB00392A6F</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>928A6ED918E8B4CA00392A6F</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>928A6ED518E8B4CA00392A6F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>928A6ED118E8B4CA00392A6F</string>
-			<key>productRefGroup</key>
-			<string>928A6EDB18E8B4CA00392A6F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>928A6ED918E8B4CA00392A6F</string>
-				<string>928A6EFA18E8B4CB00392A6F</string>
-			</array>
-		</dict>
-		<key>928A6ED518E8B4CA00392A6F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>928A6F0A18E8B4CB00392A6F</string>
-				<string>928A6F0B18E8B4CB00392A6F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>928A6ED618E8B4CA00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A6EEA18E8B4CA00392A6F</string>
-				<string>928A6EEE18E8B4CA00392A6F</string>
-				<string>928A6EF418E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6ED718E8B4CA00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A701718E9442000392A6F</string>
-				<string>928A6EE018E8B4CA00392A6F</string>
-				<string>928A6EE218E8B4CA00392A6F</string>
-				<string>928A6EDE18E8B4CA00392A6F</string>
-				<string>FDCD219AF0354343B74BB1D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6ED818E8B4CA00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A6EF618E8B4CB00392A6F</string>
-				<string>928A6EE818E8B4CA00392A6F</string>
-				<string>928A6EF118E8B4CA00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6ED918E8B4CA00392A6F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>928A6F0C18E8B4CB00392A6F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>12C5781B2C69434286D26F41</string>
-				<string>928A6ED618E8B4CA00392A6F</string>
-				<string>928A6ED718E8B4CA00392A6F</string>
-				<string>928A6ED818E8B4CA00392A6F</string>
-				<string>DE08A153E81145E2B1C9E373</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OpenOnderwijsAPI-demo</string>
-			<key>productName</key>
-			<string>OpenOnderwijsAPI-objc</string>
-			<key>productReference</key>
-			<string>928A6EDA18E8B4CA00392A6F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>928A6EDA18E8B4CA00392A6F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-demo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>928A6EDB18E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EDA18E8B4CA00392A6F</string>
-				<string>928A6EFB18E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EDC18E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A701618E9442000392A6F</string>
-				<string>928A6EDD18E8B4CA00392A6F</string>
-				<string>928A6EDF18E8B4CA00392A6F</string>
-				<string>928A6EE118E8B4CA00392A6F</string>
-				<string>928A6EFC18E8B4CB00392A6F</string>
-				<string>99A20E58E9F242EAABCFD216</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EDD18E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>928A6EDE18E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EDD18E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EDF18E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>928A6EE018E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EDF18E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EE118E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>928A6EE218E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EE118E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EE318E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EEC18E8B4CA00392A6F</string>
-				<string>928A6EED18E8B4CA00392A6F</string>
-				<string>928A6EEF18E8B4CA00392A6F</string>
-				<string>928A6EF218E8B4CB00392A6F</string>
-				<string>928A6EF318E8B4CB00392A6F</string>
-				<string>928A6EF518E8B4CB00392A6F</string>
-				<string>928A6EE418E8B4CA00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-objc</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EE418E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EE518E8B4CA00392A6F</string>
-				<string>928A6EE618E8B4CA00392A6F</string>
-				<string>928A6EE918E8B4CA00392A6F</string>
-				<string>928A6EEB18E8B4CA00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EE518E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-demo-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EE618E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EE718E8B4CA00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EE718E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EE818E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EE618E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EE918E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EEA18E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EE918E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EEB18E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-demo-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EEC18E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EED18E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EEE18E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EED18E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EEF18E8B4CA00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6EF018E8B4CA00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EF018E8B4CA00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EF118E8B4CA00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EEF18E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EF218E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EF318E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EF418E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EF318E8B4CB00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EF518E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6EF618E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EF518E8B4CB00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EF718E8B4CB00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A6F0918E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6EF818E8B4CB00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A6EFD18E8B4CB00392A6F</string>
-				<string>928A6EFF18E8B4CB00392A6F</string>
-				<string>928A6EFE18E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6EF918E8B4CB00392A6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>928A6F0718E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>928A6EFA18E8B4CB00392A6F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>928A6F0F18E8B4CB00392A6F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>928A6EF718E8B4CB00392A6F</string>
-				<string>928A6EF818E8B4CB00392A6F</string>
-				<string>928A6EF918E8B4CB00392A6F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>928A6F0118E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OpenOnderwijsAPI-demoTests</string>
-			<key>productName</key>
-			<string>OpenOnderwijsAPI-objcTests</string>
-			<key>productReference</key>
-			<string>928A6EFB18E8B4CB00392A6F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>928A6EFB18E8B4CB00392A6F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-demoTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>928A6EFC18E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>928A6EFD18E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EFC18E8B4CB00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EFE18E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EDD18E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6EFF18E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6EE118E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6F0018E8B4CB00392A6F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>928A6ED218E8B4CA00392A6F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>928A6ED918E8B4CA00392A6F</string>
-			<key>remoteInfo</key>
-			<string>OpenOnderwijsAPI-objc</string>
-		</dict>
-		<key>928A6F0118E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>928A6ED918E8B4CA00392A6F</string>
-			<key>targetProxy</key>
-			<string>928A6F0018E8B4CB00392A6F</string>
-		</dict>
-		<key>928A6F0218E8B4CB00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6F0818E8B4CB00392A6F</string>
-				<string>928A6F0318E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-objcTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0318E8B4CB00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6F0418E8B4CB00392A6F</string>
-				<string>928A6F0518E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0418E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI-demoTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0518E8B4CB00392A6F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>928A6F0618E8B4CB00392A6F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0618E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0718E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6F0518E8B4CB00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6F0818E8B4CB00392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>OpenOnderwijsAPI_objcTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A6F0918E8B4CB00392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A6F0818E8B4CB00392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>928A6F0A18E8B4CB00392A6F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>928A6F0B18E8B4CB00392A6F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>928A6F0C18E8B4CB00392A6F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>928A6F0D18E8B4CB00392A6F</string>
-				<string>928A6F0E18E8B4CB00392A6F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>928A6F0D18E8B4CB00392A6F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3B2EA48586E24290A4C37EBA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/ivo/Sites/OpenOnderwijsAPI-objc/Library/OpenOnderwijsAPI-objc/Products</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>OpenOnderwijsAPI-demo</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>928A6F0E18E8B4CB00392A6F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3B2EA48586E24290A4C37EBA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/ivo/Sites/OpenOnderwijsAPI-objc/Library/OpenOnderwijsAPI-objc/Products</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>OpenOnderwijsAPI-demo</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>928A6F0F18E8B4CB00392A6F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>928A6F1018E8B4CB00392A6F</string>
-				<string>928A6F1118E8B4CB00392A6F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>928A6F1018E8B4CB00392A6F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI-objc.app/OpenOnderwijsAPI-objc</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-demoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>OpenOnderwijsAPI-demoTests</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>928A6F1118E8B4CB00392A6F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI-objc.app/OpenOnderwijsAPI-objc</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-demoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>OpenOnderwijsAPI-demoTests</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>928A701618E9442000392A6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>OpenOnderwijsAPI.framework</string>
-			<key>path</key>
-			<string>../../Library/OpenOnderwijsAPI-objc/Products/OpenOnderwijsAPI.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>928A701718E9442000392A6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>928A701618E9442000392A6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>99A20E58E9F242EAABCFD216</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-OpenOnderwijsAPI-demo.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DE08A153E81145E2B1C9E373</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/../../Pods/Pods-OpenOnderwijsAPI-demo-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FDCD219AF0354343B74BB1D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99A20E58E9F242EAABCFD216</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>928A6ED218E8B4CA00392A6F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		928A6EDE18E8B4CA00392A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EDD18E8B4CA00392A6F /* Foundation.framework */; };
+		928A6EE018E8B4CA00392A6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EDF18E8B4CA00392A6F /* CoreGraphics.framework */; };
+		928A6EE218E8B4CA00392A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EE118E8B4CA00392A6F /* UIKit.framework */; };
+		928A6EE818E8B4CA00392A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 928A6EE618E8B4CA00392A6F /* InfoPlist.strings */; };
+		928A6EEA18E8B4CA00392A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A6EE918E8B4CA00392A6F /* main.m */; };
+		928A6EEE18E8B4CA00392A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A6EED18E8B4CA00392A6F /* AppDelegate.m */; };
+		928A6EF118E8B4CA00392A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928A6EEF18E8B4CA00392A6F /* Main.storyboard */; };
+		928A6EF418E8B4CB00392A6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A6EF318E8B4CB00392A6F /* ViewController.m */; };
+		928A6EF618E8B4CB00392A6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928A6EF518E8B4CB00392A6F /* Images.xcassets */; };
+		928A6EFD18E8B4CB00392A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EFC18E8B4CB00392A6F /* XCTest.framework */; };
+		928A6EFE18E8B4CB00392A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EDD18E8B4CA00392A6F /* Foundation.framework */; };
+		928A6EFF18E8B4CB00392A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6EE118E8B4CA00392A6F /* UIKit.framework */; };
+		928A6F0718E8B4CB00392A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 928A6F0518E8B4CB00392A6F /* InfoPlist.strings */; };
+		928A6F0918E8B4CB00392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A6F0818E8B4CB00392A6F /* OpenOnderwijsAPI_objcTests.m */; };
+		928A701718E9442000392A6F /* OpenOnderwijsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A701618E9442000392A6F /* OpenOnderwijsAPI.framework */; };
+		FDCD219AF0354343B74BB1D8 /* libPods-OpenOnderwijsAPI-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A20E58E9F242EAABCFD216 /* libPods-OpenOnderwijsAPI-demo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		928A6F0018E8B4CB00392A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 928A6ED218E8B4CA00392A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 928A6ED918E8B4CA00392A6F;
+			remoteInfo = "OpenOnderwijsAPI-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2EA48586E24290A4C37EBA /* Pods-OpenOnderwijsAPI-demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenOnderwijsAPI-demo.xcconfig"; path = "../../Pods/Pods-OpenOnderwijsAPI-demo.xcconfig"; sourceTree = "<group>"; };
+		928A6EDA18E8B4CA00392A6F /* OpenOnderwijsAPI-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenOnderwijsAPI-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928A6EDD18E8B4CA00392A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		928A6EDF18E8B4CA00392A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		928A6EE118E8B4CA00392A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		928A6EE518E8B4CA00392A6F /* OpenOnderwijsAPI-demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenOnderwijsAPI-demo-Info.plist"; sourceTree = "<group>"; };
+		928A6EE718E8B4CA00392A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		928A6EE918E8B4CA00392A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		928A6EEB18E8B4CA00392A6F /* OpenOnderwijsAPI-demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenOnderwijsAPI-demo-Prefix.pch"; sourceTree = "<group>"; };
+		928A6EEC18E8B4CA00392A6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		928A6EED18E8B4CA00392A6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		928A6EF018E8B4CA00392A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		928A6EF218E8B4CB00392A6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		928A6EF318E8B4CB00392A6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		928A6EF518E8B4CB00392A6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		928A6EFB18E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenOnderwijsAPI-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928A6EFC18E8B4CB00392A6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		928A6F0418E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenOnderwijsAPI-demoTests-Info.plist"; sourceTree = "<group>"; };
+		928A6F0618E8B4CB00392A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		928A6F0818E8B4CB00392A6F /* OpenOnderwijsAPI_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenOnderwijsAPI_objcTests.m; sourceTree = "<group>"; };
+		928A701618E9442000392A6F /* OpenOnderwijsAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenOnderwijsAPI.framework; path = "../../Library/OpenOnderwijsAPI-objc/Products/OpenOnderwijsAPI.framework"; sourceTree = "<group>"; };
+		99A20E58E9F242EAABCFD216 /* libPods-OpenOnderwijsAPI-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenOnderwijsAPI-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		928A6ED718E8B4CA00392A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A701718E9442000392A6F /* OpenOnderwijsAPI.framework in Frameworks */,
+				928A6EE018E8B4CA00392A6F /* CoreGraphics.framework in Frameworks */,
+				928A6EE218E8B4CA00392A6F /* UIKit.framework in Frameworks */,
+				928A6EDE18E8B4CA00392A6F /* Foundation.framework in Frameworks */,
+				FDCD219AF0354343B74BB1D8 /* libPods-OpenOnderwijsAPI-demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6EF818E8B4CB00392A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6EFD18E8B4CB00392A6F /* XCTest.framework in Frameworks */,
+				928A6EFF18E8B4CB00392A6F /* UIKit.framework in Frameworks */,
+				928A6EFE18E8B4CB00392A6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		928A6ED118E8B4CA00392A6F = {
+			isa = PBXGroup;
+			children = (
+				928A6EE318E8B4CA00392A6F /* OpenOnderwijsAPI-objc */,
+				928A6F0218E8B4CB00392A6F /* OpenOnderwijsAPI-objcTests */,
+				928A6EDC18E8B4CA00392A6F /* Frameworks */,
+				928A6EDB18E8B4CA00392A6F /* Products */,
+				3B2EA48586E24290A4C37EBA /* Pods-OpenOnderwijsAPI-demo.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		928A6EDB18E8B4CA00392A6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928A6EDA18E8B4CA00392A6F /* OpenOnderwijsAPI-demo.app */,
+				928A6EFB18E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		928A6EDC18E8B4CA00392A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				928A701618E9442000392A6F /* OpenOnderwijsAPI.framework */,
+				928A6EDD18E8B4CA00392A6F /* Foundation.framework */,
+				928A6EDF18E8B4CA00392A6F /* CoreGraphics.framework */,
+				928A6EE118E8B4CA00392A6F /* UIKit.framework */,
+				928A6EFC18E8B4CB00392A6F /* XCTest.framework */,
+				99A20E58E9F242EAABCFD216 /* libPods-OpenOnderwijsAPI-demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		928A6EE318E8B4CA00392A6F /* OpenOnderwijsAPI-objc */ = {
+			isa = PBXGroup;
+			children = (
+				928A6EEC18E8B4CA00392A6F /* AppDelegate.h */,
+				928A6EED18E8B4CA00392A6F /* AppDelegate.m */,
+				928A6EEF18E8B4CA00392A6F /* Main.storyboard */,
+				928A6EF218E8B4CB00392A6F /* ViewController.h */,
+				928A6EF318E8B4CB00392A6F /* ViewController.m */,
+				928A6EF518E8B4CB00392A6F /* Images.xcassets */,
+				928A6EE418E8B4CA00392A6F /* Supporting Files */,
+			);
+			path = "OpenOnderwijsAPI-objc";
+			sourceTree = "<group>";
+		};
+		928A6EE418E8B4CA00392A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				928A6EE518E8B4CA00392A6F /* OpenOnderwijsAPI-demo-Info.plist */,
+				928A6EE618E8B4CA00392A6F /* InfoPlist.strings */,
+				928A6EE918E8B4CA00392A6F /* main.m */,
+				928A6EEB18E8B4CA00392A6F /* OpenOnderwijsAPI-demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		928A6F0218E8B4CB00392A6F /* OpenOnderwijsAPI-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				928A6F0818E8B4CB00392A6F /* OpenOnderwijsAPI_objcTests.m */,
+				928A6F0318E8B4CB00392A6F /* Supporting Files */,
+			);
+			path = "OpenOnderwijsAPI-objcTests";
+			sourceTree = "<group>";
+		};
+		928A6F0318E8B4CB00392A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				928A6F0418E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests-Info.plist */,
+				928A6F0518E8B4CB00392A6F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		928A6ED918E8B4CA00392A6F /* OpenOnderwijsAPI-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928A6F0C18E8B4CB00392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-demo" */;
+			buildPhases = (
+				12C5781B2C69434286D26F41 /* Check Pods Manifest.lock */,
+				928A6ED618E8B4CA00392A6F /* Sources */,
+				928A6ED718E8B4CA00392A6F /* Frameworks */,
+				928A6ED818E8B4CA00392A6F /* Resources */,
+				DE08A153E81145E2B1C9E373 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenOnderwijsAPI-demo";
+			productName = "OpenOnderwijsAPI-objc";
+			productReference = 928A6EDA18E8B4CA00392A6F /* OpenOnderwijsAPI-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		928A6EFA18E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928A6F0F18E8B4CB00392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-demoTests" */;
+			buildPhases = (
+				928A6EF718E8B4CB00392A6F /* Sources */,
+				928A6EF818E8B4CB00392A6F /* Frameworks */,
+				928A6EF918E8B4CB00392A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				928A6F0118E8B4CB00392A6F /* PBXTargetDependency */,
+			);
+			name = "OpenOnderwijsAPI-demoTests";
+			productName = "OpenOnderwijsAPI-objcTests";
+			productReference = 928A6EFB18E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		928A6ED218E8B4CA00392A6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ODA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = surfnet;
+				TargetAttributes = {
+					928A6EFA18E8B4CB00392A6F = {
+						TestTargetID = 928A6ED918E8B4CA00392A6F;
+					};
+				};
+			};
+			buildConfigurationList = 928A6ED518E8B4CA00392A6F /* Build configuration list for PBXProject "OpenOnderwijsAPI-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 928A6ED118E8B4CA00392A6F;
+			productRefGroup = 928A6EDB18E8B4CA00392A6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928A6ED918E8B4CA00392A6F /* OpenOnderwijsAPI-demo */,
+				928A6EFA18E8B4CB00392A6F /* OpenOnderwijsAPI-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		928A6ED818E8B4CA00392A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6EF618E8B4CB00392A6F /* Images.xcassets in Resources */,
+				928A6EE818E8B4CA00392A6F /* InfoPlist.strings in Resources */,
+				928A6EF118E8B4CA00392A6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6EF918E8B4CB00392A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6F0718E8B4CB00392A6F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12C5781B2C69434286D26F41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE08A153E81145E2B1C9E373 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Pods-OpenOnderwijsAPI-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		928A6ED618E8B4CA00392A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6EEA18E8B4CA00392A6F /* main.m in Sources */,
+				928A6EEE18E8B4CA00392A6F /* AppDelegate.m in Sources */,
+				928A6EF418E8B4CB00392A6F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928A6EF718E8B4CB00392A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A6F0918E8B4CB00392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		928A6F0118E8B4CB00392A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 928A6ED918E8B4CA00392A6F /* OpenOnderwijsAPI-demo */;
+			targetProxy = 928A6F0018E8B4CB00392A6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		928A6EE618E8B4CA00392A6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				928A6EE718E8B4CA00392A6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		928A6EEF18E8B4CA00392A6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				928A6EF018E8B4CA00392A6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		928A6F0518E8B4CB00392A6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				928A6F0618E8B4CB00392A6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		928A6F0A18E8B4CB00392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		928A6F0B18E8B4CB00392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		928A6F0D18E8B4CB00392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2EA48586E24290A4C37EBA /* Pods-OpenOnderwijsAPI-demo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Prefix.pch";
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Info.plist";
+				PRODUCT_NAME = "OpenOnderwijsAPI-demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		928A6F0E18E8B4CB00392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2EA48586E24290A4C37EBA /* Pods-OpenOnderwijsAPI-demo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Prefix.pch";
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-demo-Info.plist";
+				PRODUCT_NAME = "OpenOnderwijsAPI-demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		928A6F1018E8B4CB00392A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI-objc.app/OpenOnderwijsAPI-objc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-demoTests-Info.plist";
+				PRODUCT_NAME = "OpenOnderwijsAPI-demoTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		928A6F1118E8B4CB00392A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenOnderwijsAPI-objc.app/OpenOnderwijsAPI-objc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenOnderwijsAPI-objc/OpenOnderwijsAPI-objc-Prefix.pch";
+				INFOPLIST_FILE = "OpenOnderwijsAPI-objcTests/OpenOnderwijsAPI-demoTests-Info.plist";
+				PRODUCT_NAME = "OpenOnderwijsAPI-demoTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928A6ED518E8B4CA00392A6F /* Build configuration list for PBXProject "OpenOnderwijsAPI-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A6F0A18E8B4CB00392A6F /* Debug */,
+				928A6F0B18E8B4CB00392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928A6F0C18E8B4CB00392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A6F0D18E8B4CB00392A6F /* Debug */,
+				928A6F0E18E8B4CB00392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928A6F0F18E8B4CB00392A6F /* Build configuration list for PBXNativeTarget "OpenOnderwijsAPI-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A6F1018E8B4CB00392A6F /* Debug */,
+				928A6F1118E8B4CB00392A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 928A6ED218E8B4CA00392A6F /* Project object */;
+}

@@ -17,9 +17,10 @@
     
     building.buildingID = [dictionary objectForKey:@"id"];
     
-    [self mapStringFields:@[@"abbreviation", @"name", @"address", @"postalCode", @"city"] fromDictionary:dictionary toEntity:building];
+    [self mapStringFields:@[@"name", @"address", @"postalCode", @"city"] fromDictionary:dictionary toEntity:building];
     
     building.buildingDescription = [dictionary objectForKey:@"description"];
+    building.abbreviation = [dictionary objectForKey:@"abbr"];
     building.latitude = [[dictionary objectForKey:@"lat"] doubleValue];
     building.longitude = [[dictionary objectForKey:@"lon"] doubleValue];
     

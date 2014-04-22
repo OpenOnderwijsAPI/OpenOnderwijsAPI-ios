@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ODAPersonsClient.h"
 #import "ODABuildingsClient.h"
+#import "ODARoomsClient.h"
 
 @interface ODAClient : NSObject
 
@@ -16,5 +17,6 @@
 
 @property (nonatomic, readonly) ODAPersonsClient *personsClient;
 @property (nonatomic, readonly) ODABuildingsClient *buildingsClient;
+@property (nonatomic, readonly) ODARoomsClient *roomsClient;
 
 @end

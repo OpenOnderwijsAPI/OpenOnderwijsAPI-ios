@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *baseURL;
 @property (nonatomic, readwrite, strong) ODAPersonsClient *personsClient;
 @property (nonatomic, readwrite, strong) ODABuildingsClient *buildingsClient;
+@property (nonatomic, readwrite, strong) ODARoomsClient *roomsClient;
 
 @end
 
@@ -38,5 +39,12 @@
         _buildingsClient = [[ODABuildingsClient alloc] initWithBaseURL:self.baseURL];
     }
     return _buildingsClient;
+}
+
+- (ODARoomsClient *)roomsClient {
+    if (!_roomsClient) {
+        _roomsClient = [[ODARoomsClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _roomsClient;
 }
 @end

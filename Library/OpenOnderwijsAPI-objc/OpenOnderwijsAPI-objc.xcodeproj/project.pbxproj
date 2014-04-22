@@ -47,7 +47,7 @@
 		92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98D81905B5AE0095E5A9 /* ODABaseDeserializer.h */; };
 		92CD98DB1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */; };
 		92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98D91905B5AE0095E5A9 /* ODABaseDeserializer.m */; };
-		92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98DD1905BABA0095E5A9 /* ODAGroup.h */; };
+		92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98DD1905BABA0095E5A9 /* ODAGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98DE1905BABA0095E5A9 /* ODAGroup.m */; };
 		92CD98E11905BABA0095E5A9 /* ODAGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98DE1905BABA0095E5A9 /* ODAGroup.m */; };
 		92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98E21905BB500095E5A9 /* ODAEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +68,15 @@
 		92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */; };
 		92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */; };
 		92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */; };
+		92CD99041906482D0095E5A9 /* ODARoomsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD99031906482D0095E5A9 /* ODARoomsClient.m */; };
+		92CD9905190648360095E5A9 /* ODARoomsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD99021906482D0095E5A9 /* ODARoomsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD99061906483E0095E5A9 /* ODARoomsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD99031906482D0095E5A9 /* ODARoomsClient.m */; };
+		92CD9909190648D30095E5A9 /* ODARoomDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD9907190648D30095E5A9 /* ODARoomDeserializer.h */; };
+		92CD990A190648D30095E5A9 /* ODARoomDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD9908190648D30095E5A9 /* ODARoomDeserializer.m */; };
+		92CD990B190648D30095E5A9 /* ODARoomDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD9908190648D30095E5A9 /* ODARoomDeserializer.m */; };
+		92CD990E190649870095E5A9 /* ODARoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CD990C190649870095E5A9 /* ODARoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CD990F190649870095E5A9 /* ODARoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD990D190649870095E5A9 /* ODARoom.m */; };
+		92CD9910190649870095E5A9 /* ODARoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CD990D190649870095E5A9 /* ODARoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +132,12 @@
 		92CD98F81906429B0095E5A9 /* ODABuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABuilding.m; sourceTree = "<group>"; };
 		92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABuildingDeserializer.h; sourceTree = "<group>"; };
 		92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABuildingDeserializer.m; sourceTree = "<group>"; };
+		92CD99021906482D0095E5A9 /* ODARoomsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODARoomsClient.h; sourceTree = "<group>"; };
+		92CD99031906482D0095E5A9 /* ODARoomsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODARoomsClient.m; sourceTree = "<group>"; };
+		92CD9907190648D30095E5A9 /* ODARoomDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODARoomDeserializer.h; sourceTree = "<group>"; };
+		92CD9908190648D30095E5A9 /* ODARoomDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODARoomDeserializer.m; sourceTree = "<group>"; };
+		92CD990C190649870095E5A9 /* ODARoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODARoom.h; sourceTree = "<group>"; };
+		92CD990D190649870095E5A9 /* ODARoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODARoom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +256,8 @@
 				92CD98E31905BB500095E5A9 /* ODAEntity.m */,
 				92CD98F71906429B0095E5A9 /* ODABuilding.h */,
 				92CD98F81906429B0095E5A9 /* ODABuilding.m */,
+				92CD990C190649870095E5A9 /* ODARoom.h */,
+				92CD990D190649870095E5A9 /* ODARoom.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -256,6 +273,8 @@
 				92CD98E91905BBCC0095E5A9 /* ODAGroupDeserializer.m */,
 				92CD98FC1906434F0095E5A9 /* ODABuildingDeserializer.h */,
 				92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */,
+				92CD9907190648D30095E5A9 /* ODARoomDeserializer.h */,
+				92CD9908190648D30095E5A9 /* ODARoomDeserializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -270,6 +289,8 @@
 				92CD98C9190560760095E5A9 /* ODAAbstractClient-Protected.h */,
 				92CD98F2190640750095E5A9 /* ODABuildingsClient.h */,
 				92CD98F3190640750095E5A9 /* ODABuildingsClient.m */,
+				92CD99021906482D0095E5A9 /* ODARoomsClient.h */,
+				92CD99031906482D0095E5A9 /* ODARoomsClient.m */,
 			);
 			name = Clients;
 			sourceTree = "<group>";
@@ -284,6 +305,7 @@
 				92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */,
 				92CD98EF190637830095E5A9 /* ODAParameters.h in Headers */,
 				928A700F18E942E000392A6F /* ODAClient.h in Headers */,
+				92CD990E190649870095E5A9 /* ODARoom.h in Headers */,
 				92CD98F4190640750095E5A9 /* ODABuildingsClient.h in Headers */,
 				92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */,
 				92CD98F91906429B0095E5A9 /* ODABuilding.h in Headers */,
@@ -293,8 +315,10 @@
 				928A702218E94C5B00392A6F /* ODAPerson.h in Headers */,
 				92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */,
 				92CD98CA190561130095E5A9 /* ODAAbstractClient.h in Headers */,
+				92CD9905190648360095E5A9 /* ODARoomsClient.h in Headers */,
 				92CD98D51905B3DB0095E5A9 /* ODAPersonDeserializer.h in Headers */,
 				92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */,
+				92CD9909190648D30095E5A9 /* ODARoomDeserializer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +435,7 @@
 				92CD98FA1906429B0095E5A9 /* ODABuilding.m in Sources */,
 				92CD98EB1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
 				92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */,
+				92CD990F190649870095E5A9 /* ODARoom.m in Sources */,
 				92CD98F0190637830095E5A9 /* ODAParameters.m in Sources */,
 				92CD98F5190640750095E5A9 /* ODABuildingsClient.m in Sources */,
 				928A6FF018E9407000392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */,
@@ -419,9 +444,11 @@
 				928A700D18E9423800392A6F /* ODAClient.m in Sources */,
 				928A701D18E949FD00392A6F /* ODAPersonsClient.m in Sources */,
 				92CD98D61905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				92CD990A190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
 				92CD98E51905BB500095E5A9 /* ODAEntity.m in Sources */,
 				92CD98CD190567510095E5A9 /* ODARequestOperation.m in Sources */,
 				92CD98C819055C450095E5A9 /* ODAAbstractClient.m in Sources */,
+				92CD99041906482D0095E5A9 /* ODARoomsClient.m in Sources */,
 				92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,12 +458,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CD98F1190637830095E5A9 /* ODAParameters.m in Sources */,
+				92CD9910190649870095E5A9 /* ODARoom.m in Sources */,
 				92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
 				92CD98CF1905AE520095E5A9 /* ODAAbstractClient.m in Sources */,
 				92CD98D11905AE920095E5A9 /* ODARequestOperation.m in Sources */,
+				92CD990B190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
 				92CD98F6190640750095E5A9 /* ODABuildingsClient.m in Sources */,
 				92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
 				92CD98D71905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				92CD99061906483E0095E5A9 /* ODARoomsClient.m in Sources */,
 				92CD98FB1906429B0095E5A9 /* ODABuilding.m in Sources */,
 				92CD98D01905AE5E0095E5A9 /* ODAPerson.m in Sources */,
 				92CD98CE1905AE4E0095E5A9 /* ODAPersonsClient.m in Sources */,
