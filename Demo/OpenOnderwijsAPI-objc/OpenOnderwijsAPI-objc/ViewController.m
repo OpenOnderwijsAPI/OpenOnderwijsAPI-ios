@@ -61,7 +61,7 @@
     [apiClient.personsClient getList:listParams onComplete:^(BOOL success, NSArray *personList) {
      
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %d persons on the first page named 'bigger'.", [personList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %lu persons on the first page named 'bigger'.", (unsigned long)[personList count]]];
         } else {
             [self appendLog:@"Error in listing persons of first page :-("];
         }
@@ -84,7 +84,7 @@
 
     [apiClient.buildingsClient getList:buildingParams onComplete:^(BOOL success, NSArray *buildingList) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %d buildings on the first page", [buildingList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %lu buildings on the first page", (unsigned long)[buildingList count]]];
         } else {
             [self appendLog:@"Error in listing first page of buildings :-("];
         }
@@ -96,7 +96,7 @@
     [apiClient.roomsClient getById:@"1" onComplete:^(BOOL success, ODARoom *room) {
         
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"The room with the ID '1' has %d seats", room.totalSeats]];
+            [self appendLog:[NSString stringWithFormat:@"The room with the ID '1' has %ld seats", (long)room.totalSeats]];
         } else {
             [self appendLog:@"Error in getting room with ID: '1' :-("];
         }
@@ -107,7 +107,7 @@
     
     [apiClient.roomsClient getList:roomParams onComplete:^(BOOL success, NSArray *roomList) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %d rooms on the first page", [roomList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %lu rooms on the first page", (unsigned long)[roomList count]]];
         } else {
             [self appendLog:@"Error in listing first page of rooms :-("];
         }
@@ -115,116 +115,71 @@
         
     /**
      * GROUPS
-     */ /*
+     */
+    [apiClient.groupsClient getById:@"1" onComplete:^(BOOL success, ODAGroup *group) {
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"The group with the id '1' has %lu member(s), and its name is %@", (unsigned long)[group.members count], group.name]];
+        } else {
+            [self appendLog:@"Error getting info about the group with id '1' :-("];
+        }
+    }];
     
-    final TextView firstGroupMembers = (TextView)findViewById(R.id.firstGroupMembers);
-    final TextView numberOfGroups = (TextView)findViewById(R.id.numberOfGroups); // get info about the group with the id '1'
-    apiClient.getGroupsClient().getById("1", null, new EntityHandler<Group>() {
-        
-        @Override
-        public void success(Group group) { // display the result
-            firstGroupMembers.setText("The group with the id '1' has " + group.getMembers().size() + " member(s), and its name is '" + group.getName() + "'.");
+    ODAParameters *groupParams = [[ODAParameters alloc] init];
+    groupParams.page = 1;
+
+    [apiClient.groupsClient getList:groupParams onComplete:^(BOOL success, NSArray *list) {
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"There are %lu groups on the first page", (unsigned long)[list count]]];
+        } else {
+            [self appendLog:@"Error in listing first page of groups :-("];
         }
+    }];
         
-        @Override
-        public void failure(NetworkError e) { // inform the user that an error happened
-            firstGroupMembers.setText("Error getting info about the group with the id '1' :-(");
-            e.printStackTrace();
-        }
-    });
-    
-    // you can also do inline params:
-    apiClient.getGroupsClient().getList(new Params().setPage(1), new ListHandler<Group>() {
-        
-        @Override
-        public void success(List<Group> list) {
-            // display the result
-            numberOfGroups.setText("On the first page there are " + list.size() + " groups.");
-        }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user that an error happened
-            numberOfGroups.setText("Error in listing first page of groups :-(");
-            e.printStackTrace();
-        }
-    });
-    
     /**
      * AFFILIATIONS
-     */ /*
-    final TextView secondAffiliationPersons = (TextView)findViewById(R.id.secondAffiliationPersons);
-    final TextView numberOfAffiliations = (TextView)findViewById(R.id.numberOfAffiliations);
-    // get the info about the affiliation with the id '1'
-    apiClient.getAffiliationsClient().getById("2", null, new EntityHandler<Affiliation>() {
+     */
+    // get the info about the affiliation with the id '2'
+    [apiClient.affiliationsClient getById:@"2" onComplete:^(BOOL success, ODAAffiliation *affiliation) {
         
-        @Override
-        public void success(Affiliation affiliation) {
-            // display the result
-            secondAffiliationPersons.setText("The second affiliation has " + affiliation.getPersonUrls().size() + " persons.");
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"The second affiliation has %lu persons", (unsigned long)[affiliation.personUrls count]]];
+        } else {
+            [self appendLog:@"Error getting info about the second affiliation :-("];
         }
         
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user that an error happened
-            secondAffiliationPersons.setText("Error getting info about the first affiliation :-(");
-            e.printStackTrace();
-        }
-    });
+    }];
+    
     // get the number of the affiliations on the first page
-    apiClient.getAffiliationsClient().getList(new Params().setPage(1), new ListHandler<Affiliation>() {
-        
-        @Override
-        public void success(List<Affiliation> list) {
-            // display the result
-            numberOfAffiliations.setText("There are " + list.size() + " affiliations on the first page.");
+    ODAParameters *affiliationParams = [[ODAParameters alloc] init];
+    affiliationParams.page = 1;
+    [apiClient.affiliationsClient getList:affiliationParams onComplete:^(BOOL success, NSArray *list) {
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"There are %d affiliations on the first page", [list count]]];
+        } else {
+            [self appendLog:@"Error in listing first page of affiliations :-("];
         }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user that an error happened
-            numberOfAffiliations.setText("Error in listing first page of affiliations :-(");
-            e.printStackTrace();
-        }
-    });
+    }];
     
     /**
      * NEWS ITEMS
-     */ /*
-    final TextView firstNewsItem = (TextView)findViewById(R.id.firstNewsItem);
-    final TextView numberOfNewsItems = (TextView)findViewById(R.id.numberOfNewsItems);
+     */
     // get the info about the first news item
-    apiClient.getNewsItemsClient().getById("1", null, new EntityHandler<NewsItem>() {
+    [apiClient.newsItemsClient getById:@"1" onComplete:^(BOOL success, ODANewsItem *newsItem) {
         
-        @Override
-        public void success(NewsItem newsItem) {
-            // display the result
-            firstNewsItem.setText("The first news item was publicated at: " + newsItem.getPublicationDate());
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"The first news item was published at %@", newsItem.publicationDate]];
+        } else {
+            [self appendLog:@"Error getting info about the first news item :-("];
         }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user about the error.
-            firstNewsItem.setText("Error getting info about the first news item :-(");
-            e.printStackTrace();
-        }
-    });
+    }];
     // get the number of the news items on the first page
-    apiClient.getNewsItemsClient().getList(new Params().setPage(1), new ListHandler<NewsItem>() {
-        
-        @Override
-        public void success(List<NewsItem> list) {
-            // display the result
-            numberOfNewsItems.setText("There are " + list.size() + " news items on the first page.");
+    [apiClient.newsItemsClient getList:nil onComplete:^(BOOL success, NSArray *list) {
+        if (success) {
+            [self appendLog:[NSString stringWithFormat:@"There are %d news items on the first page.", [list count]]];
+        } else {
+            [self appendLog:@"Error listing the first page of the news items :-("];
         }
-        
-        @Override
-        public void failure(NetworkError e) {
-            // inform the user about the error
-            numberOfNewsItems.setText("Error listing the first page of the news items :-(");
-            e.printStackTrace();
-        }
-    });
+    }];
     
     /**
      * NEWS FEEDS

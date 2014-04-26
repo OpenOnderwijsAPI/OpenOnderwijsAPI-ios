@@ -15,5 +15,6 @@
 @property (nonatomic, copy) NSString *type;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *groupDescription;
+@property (nonatomic, strong) NSArray *members;
 
 @end

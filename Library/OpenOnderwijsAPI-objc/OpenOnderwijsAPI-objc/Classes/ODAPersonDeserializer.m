@@ -28,17 +28,19 @@
         person.affiliations = affiliations;
     }
     
-    ODAGroupDeserializer *groupDeserializer = [[ODAGroupDeserializer alloc] init];
     NSArray *groups = [dictionary objectForKey:@"groups"];
-    NSMutableArray *parsedGroups = [[NSMutableArray alloc] initWithCapacity:[groups count]];
     if (groups) {
+        ODAGroupDeserializer *groupDeserializer = [[ODAGroupDeserializer alloc] init];
+        NSMutableArray *parsedGroups = [[NSMutableArray alloc] initWithCapacity:[groups count]];
+        
         for (NSDictionary *groupDict in groups) {
             ODAGroup *group = [groupDeserializer deserialize:groupDict];
             [parsedGroups addObject:group];
         }
-    }
-    person.groups = [NSArray arrayWithArray:parsedGroups];
+        person.groups = [NSArray arrayWithArray:parsedGroups];
 
+    }
+ 
     return person;
 }
 

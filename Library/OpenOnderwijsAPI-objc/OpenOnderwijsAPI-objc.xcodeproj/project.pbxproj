@@ -22,6 +22,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		924B93BC190B060900B263AA /* ODAGroupsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93BB190B060900B263AA /* ODAGroupsClient.m */; };
+		924B93BD190B087400B263AA /* ODAGroupsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93BA190B060900B263AA /* ODAGroupsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B93BE190B093C00B263AA /* ODAGroupsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93BB190B060900B263AA /* ODAGroupsClient.m */; };
+		924B93C1190B0D3300B263AA /* ODAAffiliationDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93BF190B0D3300B263AA /* ODAAffiliationDeserializer.h */; };
+		924B93C2190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93C0190B0D3300B263AA /* ODAAffiliationDeserializer.m */; };
+		924B93C3190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93C0190B0D3300B263AA /* ODAAffiliationDeserializer.m */; };
+		924B93C6190B0D6600B263AA /* ODAAffiliation.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93C4190B0D6600B263AA /* ODAAffiliation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B93C7190B0D6600B263AA /* ODAAffiliation.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93C5190B0D6600B263AA /* ODAAffiliation.m */; };
+		924B93C8190B0D6600B263AA /* ODAAffiliation.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93C5190B0D6600B263AA /* ODAAffiliation.m */; };
+		924B93CB190B134600B263AA /* ODAAffiliationsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93C9190B134600B263AA /* ODAAffiliationsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B93CC190B134600B263AA /* ODAAffiliationsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93CA190B134600B263AA /* ODAAffiliationsClient.m */; };
+		924B93CD190B134600B263AA /* ODAAffiliationsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93CA190B134600B263AA /* ODAAffiliationsClient.m */; };
+		924B93D0190BDAFF00B263AA /* ODANewsItemsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93CE190BDAFF00B263AA /* ODANewsItemsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B93D1190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93CF190BDAFF00B263AA /* ODANewsItemsClient.m */; };
+		924B93D2190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93CF190BDAFF00B263AA /* ODANewsItemsClient.m */; };
+		924B93D5190BDBC400B263AA /* ODANewsItemDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93D3190BDBC400B263AA /* ODANewsItemDeserializer.h */; };
+		924B93D6190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */; };
+		924B93D7190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */; };
+		924B93DA190BDCB700B263AA /* ODANewsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93D8190BDCB700B263AA /* ODANewsItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B93DB190BDCB700B263AA /* ODANewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D9190BDCB700B263AA /* ODANewsItem.m */; };
+		924B93DC190BDCB700B263AA /* ODANewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D9190BDCB700B263AA /* ODANewsItem.m */; };
 		928A6FE418E9407000392A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FE318E9407000392A6F /* XCTest.framework */; };
 		928A6FE518E9407000392A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCA18E9406F00392A6F /* Foundation.framework */; };
 		928A6FE618E9407000392A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCE18E9406F00392A6F /* UIKit.framework */; };
@@ -90,6 +111,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		924B93BA190B060900B263AA /* ODAGroupsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroupsClient.h; sourceTree = "<group>"; };
+		924B93BB190B060900B263AA /* ODAGroupsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroupsClient.m; sourceTree = "<group>"; };
+		924B93BF190B0D3300B263AA /* ODAAffiliationDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAAffiliationDeserializer.h; sourceTree = "<group>"; };
+		924B93C0190B0D3300B263AA /* ODAAffiliationDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAAffiliationDeserializer.m; sourceTree = "<group>"; };
+		924B93C4190B0D6600B263AA /* ODAAffiliation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAAffiliation.h; sourceTree = "<group>"; };
+		924B93C5190B0D6600B263AA /* ODAAffiliation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAAffiliation.m; sourceTree = "<group>"; };
+		924B93C9190B134600B263AA /* ODAAffiliationsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAAffiliationsClient.h; sourceTree = "<group>"; };
+		924B93CA190B134600B263AA /* ODAAffiliationsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAAffiliationsClient.m; sourceTree = "<group>"; };
+		924B93CE190BDAFF00B263AA /* ODANewsItemsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsItemsClient.h; sourceTree = "<group>"; };
+		924B93CF190BDAFF00B263AA /* ODANewsItemsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsItemsClient.m; sourceTree = "<group>"; };
+		924B93D3190BDBC400B263AA /* ODANewsItemDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsItemDeserializer.h; sourceTree = "<group>"; };
+		924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsItemDeserializer.m; sourceTree = "<group>"; };
+		924B93D8190BDCB700B263AA /* ODANewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsItem.h; sourceTree = "<group>"; };
+		924B93D9190BDCB700B263AA /* ODANewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsItem.m; sourceTree = "<group>"; };
 		928A6FCA18E9406F00392A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		928A6FCC18E9406F00392A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		928A6FCE18E9406F00392A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -258,6 +293,10 @@
 				92CD98F81906429B0095E5A9 /* ODABuilding.m */,
 				92CD990C190649870095E5A9 /* ODARoom.h */,
 				92CD990D190649870095E5A9 /* ODARoom.m */,
+				924B93C4190B0D6600B263AA /* ODAAffiliation.h */,
+				924B93C5190B0D6600B263AA /* ODAAffiliation.m */,
+				924B93D8190BDCB700B263AA /* ODANewsItem.h */,
+				924B93D9190BDCB700B263AA /* ODANewsItem.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -275,6 +314,10 @@
 				92CD98FD1906434F0095E5A9 /* ODABuildingDeserializer.m */,
 				92CD9907190648D30095E5A9 /* ODARoomDeserializer.h */,
 				92CD9908190648D30095E5A9 /* ODARoomDeserializer.m */,
+				924B93BF190B0D3300B263AA /* ODAAffiliationDeserializer.h */,
+				924B93C0190B0D3300B263AA /* ODAAffiliationDeserializer.m */,
+				924B93D3190BDBC400B263AA /* ODANewsItemDeserializer.h */,
+				924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -291,6 +334,12 @@
 				92CD98F3190640750095E5A9 /* ODABuildingsClient.m */,
 				92CD99021906482D0095E5A9 /* ODARoomsClient.h */,
 				92CD99031906482D0095E5A9 /* ODARoomsClient.m */,
+				924B93BA190B060900B263AA /* ODAGroupsClient.h */,
+				924B93BB190B060900B263AA /* ODAGroupsClient.m */,
+				924B93C9190B134600B263AA /* ODAAffiliationsClient.h */,
+				924B93CA190B134600B263AA /* ODAAffiliationsClient.m */,
+				924B93CE190BDAFF00B263AA /* ODANewsItemsClient.h */,
+				924B93CF190BDAFF00B263AA /* ODANewsItemsClient.m */,
 			);
 			name = Clients;
 			sourceTree = "<group>";
@@ -302,20 +351,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924B93C6190B0D6600B263AA /* ODAAffiliation.h in Headers */,
 				92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */,
 				92CD98EF190637830095E5A9 /* ODAParameters.h in Headers */,
+				924B93BD190B087400B263AA /* ODAGroupsClient.h in Headers */,
 				928A700F18E942E000392A6F /* ODAClient.h in Headers */,
 				92CD990E190649870095E5A9 /* ODARoom.h in Headers */,
+				924B93D5190BDBC400B263AA /* ODANewsItemDeserializer.h in Headers */,
 				92CD98F4190640750095E5A9 /* ODABuildingsClient.h in Headers */,
 				92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */,
 				92CD98F91906429B0095E5A9 /* ODABuilding.h in Headers */,
 				92CD98EA1905BBCC0095E5A9 /* ODAGroupDeserializer.h in Headers */,
+				924B93DA190BDCB700B263AA /* ODANewsItem.h in Headers */,
 				928A701018E942E000392A6F /* OpenOnderwijsAPI.h in Headers */,
+				924B93CB190B134600B263AA /* ODAAffiliationsClient.h in Headers */,
 				928A702318E94C5B00392A6F /* ODAPersonsClient.h in Headers */,
 				928A702218E94C5B00392A6F /* ODAPerson.h in Headers */,
 				92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */,
 				92CD98CA190561130095E5A9 /* ODAAbstractClient.h in Headers */,
 				92CD9905190648360095E5A9 /* ODARoomsClient.h in Headers */,
+				924B93C1190B0D3300B263AA /* ODAAffiliationDeserializer.h in Headers */,
+				924B93D0190BDAFF00B263AA /* ODANewsItemsClient.h in Headers */,
 				92CD98D51905B3DB0095E5A9 /* ODAPersonDeserializer.h in Headers */,
 				92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */,
 				92CD9909190648D30095E5A9 /* ODARoomDeserializer.h in Headers */,
@@ -434,22 +490,29 @@
 			files = (
 				92CD98FA1906429B0095E5A9 /* ODABuilding.m in Sources */,
 				92CD98EB1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
+				924B93C7190B0D6600B263AA /* ODAAffiliation.m in Sources */,
 				92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */,
+				924B93BC190B060900B263AA /* ODAGroupsClient.m in Sources */,
 				92CD990F190649870095E5A9 /* ODARoom.m in Sources */,
 				92CD98F0190637830095E5A9 /* ODAParameters.m in Sources */,
 				92CD98F5190640750095E5A9 /* ODABuildingsClient.m in Sources */,
+				924B93DB190BDCB700B263AA /* ODANewsItem.m in Sources */,
 				928A6FF018E9407000392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */,
 				928A702118E94AF800392A6F /* ODAPerson.m in Sources */,
 				92CD98DB1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
 				928A700D18E9423800392A6F /* ODAClient.m in Sources */,
 				928A701D18E949FD00392A6F /* ODAPersonsClient.m in Sources */,
+				924B93C2190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */,
+				924B93CC190B134600B263AA /* ODAAffiliationsClient.m in Sources */,
 				92CD98D61905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
 				92CD990A190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
 				92CD98E51905BB500095E5A9 /* ODAEntity.m in Sources */,
 				92CD98CD190567510095E5A9 /* ODARequestOperation.m in Sources */,
+				924B93D1190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */,
 				92CD98C819055C450095E5A9 /* ODAAbstractClient.m in Sources */,
 				92CD99041906482D0095E5A9 /* ODARoomsClient.m in Sources */,
 				92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
+				924B93D6190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,14 +525,21 @@
 				92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
 				92CD98CF1905AE520095E5A9 /* ODAAbstractClient.m in Sources */,
 				92CD98D11905AE920095E5A9 /* ODARequestOperation.m in Sources */,
+				924B93D7190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */,
+				924B93C8190B0D6600B263AA /* ODAAffiliation.m in Sources */,
+				924B93BE190B093C00B263AA /* ODAGroupsClient.m in Sources */,
+				924B93DC190BDCB700B263AA /* ODANewsItem.m in Sources */,
 				92CD990B190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
+				924B93CD190B134600B263AA /* ODAAffiliationsClient.m in Sources */,
 				92CD98F6190640750095E5A9 /* ODABuildingsClient.m in Sources */,
 				92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
 				92CD98D71905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				924B93C3190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */,
 				92CD99061906483E0095E5A9 /* ODARoomsClient.m in Sources */,
 				92CD98FB1906429B0095E5A9 /* ODABuilding.m in Sources */,
 				92CD98D01905AE5E0095E5A9 /* ODAPerson.m in Sources */,
 				92CD98CE1905AE4E0095E5A9 /* ODAPersonsClient.m in Sources */,
+				924B93D2190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */,
 				92CD98E11905BABA0095E5A9 /* ODAGroup.m in Sources */,
 				92CD98EC1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
 				928A701818E944F800392A6F /* ODAClient.m in Sources */,
