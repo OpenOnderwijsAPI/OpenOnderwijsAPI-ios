@@ -12,11 +12,13 @@
 
 #define BASE_URL @"http://localhost:8000"
 
-// If you want to use OAUTH in the demo, you have to set OAUTH up first on the
-// server.
-// If you leave this to 0, the demo will run without oauth. (the personal data call will then fail because of an
-// invalid token but the rest will still work).
+// If you want to use OAUTH in the demo, you have to set OAUTH up first on the server. (See README)
+// If you leave this to 0, the demo will run without oauth. (some calls will tell you they lack a token, but the rest will work).
 #define USE_OAUTH 0
+
+// Also you'll need to set these if you want to use OAuth:
+#define OAUTH_CLIENTID @"your client id"
+#define OAUTH_SECRET @"your secret"
 
 @interface ViewController ()
 
@@ -35,8 +37,8 @@
     
     // Perform a fake OAuth login to the reference API.
 #if USE_OAUTH
-    [[NXOAuth2AccountStore sharedStore] setClientID:@"56cfb7bd4a8869fb6db4"
-                                             secret:@"c29a0bdd24b0db7626d4643029e0da245efddf13"
+    [[NXOAuth2AccountStore sharedStore] setClientID:OAUTH_CLIENTID
+                                             secret:OAUTH_SECRET
                                    authorizationURL:[NSURL URLWithString:@""]
                                            tokenURL:[NSURL URLWithString:[BASE_URL stringByAppendingString:@"/oauth2/access_token"]]
                                         redirectURL:[NSURL URLWithString:@""]
@@ -100,7 +102,7 @@
     [apiClient.personsClient getList:listParams onComplete:^(BOOL success, NSArray *personList) {
      
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %lu persons on the first page named 'bigger'.", (unsigned long)[personList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %d persons on the first page named 'bigger'.", [personList count]]];
         } else {
             [self appendLog:@"Error in listing persons of first page :-("];
         }
@@ -137,7 +139,7 @@
 
     [apiClient.buildingsClient getList:buildingParams onComplete:^(BOOL success, NSArray *buildingList) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %lu buildings on the first page", (unsigned long)[buildingList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %d buildings on the first page", [buildingList count]]];
         } else {
             [self appendLog:@"Error in listing first page of buildings :-("];
         }
@@ -160,7 +162,7 @@
     
     [apiClient.roomsClient getList:roomParams onComplete:^(BOOL success, NSArray *roomList) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %lu rooms on the first page", (unsigned long)[roomList count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %d rooms on the first page", [roomList count]]];
         } else {
             [self appendLog:@"Error in listing first page of rooms :-("];
         }
@@ -171,7 +173,7 @@
      */
     [apiClient.groupsClient getById:@"1" onComplete:^(BOOL success, ODAGroup *group) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"The group with the id '1' has %lu member(s), and its name is %@", (unsigned long)[group.members count], group.name]];
+            [self appendLog:[NSString stringWithFormat:@"The group with the id '1' has %d member(s), and its name is %@", [group.members count], group.name]];
         } else {
             [self appendLog:@"Error getting info about the group with id '1' :-("];
         }
@@ -182,7 +184,7 @@
 
     [apiClient.groupsClient getList:groupParams onComplete:^(BOOL success, NSArray *list) {
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"There are %lu groups on the first page", (unsigned long)[list count]]];
+            [self appendLog:[NSString stringWithFormat:@"There are %d groups on the first page", [list count]]];
         } else {
             [self appendLog:@"Error in listing first page of groups :-("];
         }
@@ -195,7 +197,7 @@
     [apiClient.affiliationsClient getById:@"2" onComplete:^(BOOL success, ODAAffiliation *affiliation) {
         
         if (success) {
-            [self appendLog:[NSString stringWithFormat:@"The second affiliation has %lu persons", (unsigned long)[affiliation.personUrls count]]];
+            [self appendLog:[NSString stringWithFormat:@"The second affiliation has %d persons", [affiliation.personUrls count]]];
         } else {
             [self appendLog:@"Error getting info about the second affiliation :-("];
         }
