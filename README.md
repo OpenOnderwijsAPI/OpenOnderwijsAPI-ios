@@ -14,7 +14,7 @@ To use the client in your own app:
 
 * Initialize the API like this, where BASE_URL is the full url of your API.
 
-    ODAClient *apiClient = [[ODAClient alloc] initWithBaseURL:BASE_URL];
+    ```ODAClient *apiClient = [[ODAClient alloc] initWithBaseURL:BASE_URL];```
 
 That's it, you should now be able to call the api.
 
