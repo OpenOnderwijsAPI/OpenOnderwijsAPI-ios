@@ -57,6 +57,26 @@ The success variable indicates whether the call was succesful. If NO, the person
 
 To find out if the API sent an error message, you can inspect apiClient.personsClient.lastError, which will be the raw dictionary that the API returned.
 
+Working with OAuth2
+-------------------
+The library can work with OAuth2. It does not make any assumptions on your OAuth implementation, other than the fact that it uses the accessToken to call the api.
+
+The demo application contains a working OAuth sample that can serve as reference for OAuth2 setup. Regardless of what Oauth implementation you use, if you need to authorize a call using an access token, you can do so like this:
+
+    apiClient.personsClient.accessToken = self.accessToken;
+    [apiClient.personsClient getMeOnComplete:^(BOOL success, ODAPerson *person) {
+        
+        if (success) {
+            // display the name of the first person
+            [self appendLog:[NSString stringWithFormat:@"My name is: %@", person.displayName]];
+        } else {
+            [self appendLog:[NSString stringWithFormat:@"Error in getting personal data :-( (reason: %@)", apiClient.personsClient.lastError]];
+        }
+    }];
+    apiClient.personsClient.accessToken = nil;
+
+Reset the token to nil after the call if you don't want to authorize all calls of the client.
+
 Demo
 ----
 A simple demo application is privided in the Demo folder, which calls a number of methods on the API and demonstrates how to work with OAuth2.

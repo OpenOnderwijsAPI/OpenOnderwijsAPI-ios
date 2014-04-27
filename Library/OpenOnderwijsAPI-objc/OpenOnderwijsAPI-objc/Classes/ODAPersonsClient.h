@@ -15,7 +15,10 @@ typedef void (^ODAPersonCompleteBlock)(BOOL success, ODAPerson *person);
 
 @interface ODAPersonsClient : ODAAbstractClient
 
+// Get a specific person by their ID.
 - (void)getById:(NSString *)personId onComplete:(ODAPersonCompleteBlock)complete;
+
+// Get your personal details (requires OAuth token)
 - (void)getMeOnComplete:(ODAPersonCompleteBlock)complete;
 
 @end

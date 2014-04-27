@@ -17,6 +17,7 @@ typedef void (^ODAEntityCompleteBlock)(BOOL success, id entity);
 
 - (id)initWithBaseURL:(NSString *)baseURL;
 
+// Get a list of objects, filtered by the provided parameters
 - (void)getList:(ODAParameters *)params onComplete:(ODAListCompleteBlock)complete;
 
 // If your api has oauth support, set the accessToken on a client to make requests authorized.
@@ -24,6 +25,8 @@ typedef void (^ODAEntityCompleteBlock)(BOOL success, id entity);
 // The token is passed to the API as a bearer token.
 @property (nonatomic, strong) NSString *accessToken;
 
+// This propery will contain the raw API dictionary with error information, in case any
+// of the callbacks return success:NO.
 @property (nonatomic, readonly) NSDictionary *lastError;
 
 @end
