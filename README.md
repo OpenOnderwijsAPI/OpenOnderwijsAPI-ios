@@ -10,7 +10,7 @@ To use the client in your own app:
 * Simply drag the OpenOnderwijsAPI.framework (from Library/OpenOnderwijsAPI-objc/Products) to the frameworks section of your app in Xcode.
 * Add the following import statement to your app's code:
 
-    #import <OpenOnderwijsAPI/OpenOnderwijsAPI.h>
+    ```#import <OpenOnderwijsAPI/OpenOnderwijsAPI.h>```
 
 * Initialize the API like this, where BASE_URL is the full url of your API.
 
