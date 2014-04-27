@@ -11,7 +11,6 @@
 
 @interface ODAGroup : ODAEntity
 
-@property (nonatomic, copy) NSString *groupID;
 @property (nonatomic, copy) NSString *type;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *groupDescription;

@@ -17,8 +17,6 @@
     ODAPerson *person = [[ODAPerson alloc] init];
     [self mapMetadataFieldFromDictionary:dictionary toEntity:person];
     
-    person.personID = [dictionary objectForKey:@"id"];
-
     [self mapStringFields:@[@"givenName", @"surName", @"displayName", @"mail", @"telephoneNumber", @"mobileNumber",
                       @"photo", @"gender", @"organisation", @"department", @"title", @"office",
                       @"employeeID", @"studentID"] fromDictionary:dictionary toEntity:person];

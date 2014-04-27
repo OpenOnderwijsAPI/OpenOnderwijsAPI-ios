@@ -12,7 +12,8 @@ typedef void (^ODARequestCompleteBlock)(BOOL success, NSDictionary *data);
 
 @interface ODARequestOperation : NSObject
 
-- (id)initWithBaseURL:(NSString *)baseURL;
+// Initialize an operation. For unauthorized requests, pass nil as the token.
+- (id)initWithBaseURL:(NSString *)baseURL accessToken:(NSString *)accessToken;
 - (void)GET:(NSString *)resourceURL onComplete:(ODARequestCompleteBlock)complete;
 
 @end

@@ -17,10 +17,7 @@
     
     [self mapStringFields:@[@"url", @"title", @"author", @"image", @"link", @"content"] fromDictionary:dictionary toEntity:newsItem];
     
-    newsItem.newsItemID = [dictionary objectForKey:@"id"];
-    
-    // todo date
-    // newsItem.publicationDate = [dictionary objectForKey:@"pubDate"];
+    newsItem.publicationDate = [self dateFromString:[dictionary objectForKey:@"pubDate"]];
     
     return newsItem;
 }

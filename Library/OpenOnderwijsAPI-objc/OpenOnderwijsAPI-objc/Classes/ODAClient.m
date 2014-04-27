@@ -17,6 +17,14 @@
 @property (nonatomic, readwrite, strong) ODAGroupsClient *groupsClient;
 @property (nonatomic, readwrite, strong) ODAAffiliationsClient *affiliationsClient;
 @property (nonatomic, readwrite, strong) ODANewsItemsClient *newsItemsClient;
+@property (nonatomic, readwrite, strong) ODANewsFeedsClient *newsFeedsClient;
+@property (nonatomic, readwrite, strong) ODAGroupRolesClient *groupRolesClient;
+@property (nonatomic, readwrite, strong) ODACoursesClient *coursesClient;
+@property (nonatomic, readwrite, strong) ODACourseResultsClient *courseResultsClient;
+@property (nonatomic, readwrite, strong) ODAScheduleClient *scheduleClient;
+@property (nonatomic, readwrite, strong) ODATestResultsClient *testResultsClient;
+@property (nonatomic, readwrite, strong) ODAMinorsClient *minorsClient;
+
 
 @end
 
@@ -71,4 +79,54 @@
     }
     return _newsItemsClient;
 }
+
+- (ODANewsFeedsClient *)newsFeedsClient {
+    if (!_newsFeedsClient) {
+        _newsFeedsClient = [[ODANewsFeedsClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _newsFeedsClient;
+}
+
+- (ODAGroupRolesClient *)groupRolesClient {
+    if (!_groupRolesClient) {
+        _groupRolesClient = [[ODAGroupRolesClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _groupRolesClient;
+}
+
+- (ODACoursesClient *)coursesClient {
+    if (!_coursesClient) {
+        _coursesClient = [[ODACoursesClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _coursesClient;
+}
+
+- (ODACourseResultsClient *)courseResultsClient {
+    if (!_courseResultsClient) {
+        _courseResultsClient = [[ODACourseResultsClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _courseResultsClient;
+}
+
+- (ODAScheduleClient *)scheduleClient {
+    if (!_scheduleClient) {
+        _scheduleClient = [[ODAScheduleClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _scheduleClient;
+}
+
+- (ODATestResultsClient *)testResultsClient {
+    if (!_testResultsClient) {
+        _testResultsClient = [[ODATestResultsClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _testResultsClient;
+}
+
+- (ODAMinorsClient *)minorsClient {
+    if (!_minorsClient) {
+        _minorsClient = [[ODAMinorsClient alloc] initWithBaseURL:self.baseURL];
+    }
+    return _minorsClient;
+}
+
 @end

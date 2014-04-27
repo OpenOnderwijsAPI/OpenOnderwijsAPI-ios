@@ -11,7 +11,6 @@
 
 @interface ODAAffiliation : ODAEntity
 
-@property (nonatomic, copy) NSString *affiliationID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) NSArray *personUrls;
 

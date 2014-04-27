@@ -15,8 +15,6 @@
     ODAAffiliation *affiliation = [[ODAAffiliation alloc] init];
     [self mapMetadataFieldFromDictionary:dictionary toEntity:affiliation];
     
-    affiliation.affiliationID = [dictionary objectForKey:@"id"];
-  
     affiliation.name = [dictionary objectForKey:@"affiliation"];
     
     if ([dictionary objectForKey:@"persons"]) {

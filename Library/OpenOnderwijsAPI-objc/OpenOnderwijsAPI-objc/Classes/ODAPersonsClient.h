@@ -16,5 +16,6 @@ typedef void (^ODAPersonCompleteBlock)(BOOL success, ODAPerson *person);
 @interface ODAPersonsClient : ODAAbstractClient
 
 - (void)getById:(NSString *)personId onComplete:(ODAPersonCompleteBlock)complete;
+- (void)getMeOnComplete:(ODAPersonCompleteBlock)complete;
 
 @end

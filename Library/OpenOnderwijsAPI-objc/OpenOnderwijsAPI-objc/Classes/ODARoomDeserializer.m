@@ -16,8 +16,6 @@
     ODARoom *room = [[ODARoom alloc] init];
     [self mapMetadataFieldFromDictionary:dictionary toEntity:room];
     
-    room.roomID = [dictionary objectForKey:@"id"];
-    
     [self mapStringFields:@[@"name", @"address", @"postalCode", @"city"] fromDictionary:dictionary toEntity:room];
     
     room.roomDescription = [dictionary objectForKey:@"description"];

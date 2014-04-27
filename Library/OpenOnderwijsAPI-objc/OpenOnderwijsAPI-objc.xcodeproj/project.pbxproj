@@ -43,6 +43,75 @@
 		924B93DA190BDCB700B263AA /* ODANewsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93D8190BDCB700B263AA /* ODANewsItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		924B93DB190BDCB700B263AA /* ODANewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D9190BDCB700B263AA /* ODANewsItem.m */; };
 		924B93DC190BDCB700B263AA /* ODANewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93D9190BDCB700B263AA /* ODANewsItem.m */; };
+		924B93FD190BE71E00B263AA /* ODAMinorDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93DD190BE71E00B263AA /* ODAMinorDeserializer.m */; };
+		924B93FE190BE71E00B263AA /* ODAMinorDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93DD190BE71E00B263AA /* ODAMinorDeserializer.m */; };
+		924B93FF190BE71E00B263AA /* ODACourse.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93DE190BE71E00B263AA /* ODACourse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9400190BE71E00B263AA /* ODACourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93DF190BE71E00B263AA /* ODACourse.m */; };
+		924B9401190BE71E00B263AA /* ODACourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93DF190BE71E00B263AA /* ODACourse.m */; };
+		924B9402190BE71E00B263AA /* ODACourseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93E0190BE71E00B263AA /* ODACourseDeserializer.h */; };
+		924B9403190BE71E00B263AA /* ODACourseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E1190BE71E00B263AA /* ODACourseDeserializer.m */; };
+		924B9404190BE71E00B263AA /* ODACourseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E1190BE71E00B263AA /* ODACourseDeserializer.m */; };
+		924B9405190BE71E00B263AA /* ODACourseResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93E2190BE71E00B263AA /* ODACourseResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9406190BE71E00B263AA /* ODACourseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E3190BE71E00B263AA /* ODACourseResult.m */; };
+		924B9407190BE71E00B263AA /* ODACourseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E3190BE71E00B263AA /* ODACourseResult.m */; };
+		924B9408190BE71E00B263AA /* ODACourseResultDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93E4190BE71E00B263AA /* ODACourseResultDeserializer.h */; };
+		924B9409190BE71E00B263AA /* ODACourseResultDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E5190BE71E00B263AA /* ODACourseResultDeserializer.m */; };
+		924B940A190BE71E00B263AA /* ODACourseResultDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E5190BE71E00B263AA /* ODACourseResultDeserializer.m */; };
+		924B940B190BE71E00B263AA /* ODACourseResultsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E6190BE71E00B263AA /* ODACourseResultsClient.m */; };
+		924B940C190BE71E00B263AA /* ODACourseResultsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E6190BE71E00B263AA /* ODACourseResultsClient.m */; };
+		924B940D190BE71E00B263AA /* ODACoursesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E7190BE71E00B263AA /* ODACoursesClient.m */; };
+		924B940E190BE71E00B263AA /* ODACoursesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E7190BE71E00B263AA /* ODACoursesClient.m */; };
+		924B940F190BE71E00B263AA /* ODAGroupRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93E8190BE71E00B263AA /* ODAGroupRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9410190BE71E00B263AA /* ODAGroupRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E9190BE71E00B263AA /* ODAGroupRole.m */; };
+		924B9411190BE71E00B263AA /* ODAGroupRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93E9190BE71E00B263AA /* ODAGroupRole.m */; };
+		924B9412190BE71E00B263AA /* ODAGroupRoleDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93EA190BE71E00B263AA /* ODAGroupRoleDeserializer.h */; };
+		924B9413190BE71E00B263AA /* ODAGroupRoleDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EB190BE71E00B263AA /* ODAGroupRoleDeserializer.m */; };
+		924B9414190BE71E00B263AA /* ODAGroupRoleDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EB190BE71E00B263AA /* ODAGroupRoleDeserializer.m */; };
+		924B9415190BE71E00B263AA /* ODAGroupRolesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EC190BE71E00B263AA /* ODAGroupRolesClient.m */; };
+		924B9416190BE71E00B263AA /* ODAGroupRolesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EC190BE71E00B263AA /* ODAGroupRolesClient.m */; };
+		924B9417190BE71E00B263AA /* ODAMinor.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93ED190BE71E00B263AA /* ODAMinor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9418190BE71E00B263AA /* ODAMinor.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EE190BE71E00B263AA /* ODAMinor.m */; };
+		924B9419190BE71E00B263AA /* ODAMinor.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93EE190BE71E00B263AA /* ODAMinor.m */; };
+		924B941A190BE71E00B263AA /* ODAMinorDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93EF190BE71E00B263AA /* ODAMinorDeserializer.h */; };
+		924B941B190BE71E00B263AA /* ODAMinorsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F0190BE71E00B263AA /* ODAMinorsClient.m */; };
+		924B941C190BE71E00B263AA /* ODAMinorsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F0190BE71E00B263AA /* ODAMinorsClient.m */; };
+		924B941D190BE71E00B263AA /* ODAScheduleClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93F1190BE71E00B263AA /* ODAScheduleClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B941E190BE71E00B263AA /* ODAScheduleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F2190BE71E00B263AA /* ODAScheduleClient.m */; };
+		924B941F190BE71E00B263AA /* ODAScheduleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F2190BE71E00B263AA /* ODAScheduleClient.m */; };
+		924B9420190BE71E00B263AA /* ODATestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93F3190BE71E00B263AA /* ODATestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9421190BE71E00B263AA /* ODATestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F4190BE71E00B263AA /* ODATestResult.m */; };
+		924B9422190BE71E00B263AA /* ODATestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F4190BE71E00B263AA /* ODATestResult.m */; };
+		924B9423190BE71E00B263AA /* ODATestResultDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93F5190BE71E00B263AA /* ODATestResultDeserializer.h */; };
+		924B9424190BE71E00B263AA /* ODATestResultDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F6190BE71E00B263AA /* ODATestResultDeserializer.m */; };
+		924B9425190BE71E00B263AA /* ODATestResultDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F6190BE71E00B263AA /* ODATestResultDeserializer.m */; };
+		924B9426190BE71E00B263AA /* ODATestResultsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F7190BE71E00B263AA /* ODATestResultsClient.m */; };
+		924B9427190BE71E00B263AA /* ODATestResultsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B93F7190BE71E00B263AA /* ODATestResultsClient.m */; };
+		924B9428190BE71E00B263AA /* ODACourseResultsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93F8190BE71E00B263AA /* ODACourseResultsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9429190BE71E00B263AA /* ODACoursesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93F9190BE71E00B263AA /* ODACoursesClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B942A190BE71E00B263AA /* ODAGroupRolesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93FA190BE71E00B263AA /* ODAGroupRolesClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B942B190BE71E00B263AA /* ODAMinorsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93FB190BE71E00B263AA /* ODAMinorsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B942C190BE71E00B263AA /* ODATestResultsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B93FC190BE71E00B263AA /* ODATestResultsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9431190BEA7300B263AA /* ODANewsFeedDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B942D190BEA7300B263AA /* ODANewsFeedDeserializer.h */; };
+		924B9432190BEA7300B263AA /* ODANewsFeedDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B942E190BEA7300B263AA /* ODANewsFeedDeserializer.m */; };
+		924B9433190BEA7300B263AA /* ODANewsFeedDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B942E190BEA7300B263AA /* ODANewsFeedDeserializer.m */; };
+		924B9434190BEA7300B263AA /* ODANewsFeedsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B942F190BEA7300B263AA /* ODANewsFeedsClient.m */; };
+		924B9435190BEA7300B263AA /* ODANewsFeedsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B942F190BEA7300B263AA /* ODANewsFeedsClient.m */; };
+		924B9436190BEA7300B263AA /* ODANewsFeedsClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B9430190BEA7300B263AA /* ODANewsFeedsClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B9439190C65A000B263AA /* ODANewsFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B9437190C65A000B263AA /* ODANewsFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B943A190C65A000B263AA /* ODANewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9438190C65A000B263AA /* ODANewsFeed.m */; };
+		924B943B190C65A000B263AA /* ODANewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9438190C65A000B263AA /* ODANewsFeed.m */; };
+		924B943E190C670700B263AA /* ODALesson.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B943C190C670700B263AA /* ODALesson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924B943F190C670700B263AA /* ODALesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B943D190C670700B263AA /* ODALesson.m */; };
+		924B9440190C670700B263AA /* ODALesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B943D190C670700B263AA /* ODALesson.m */; };
+		924B9443190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B9441190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.h */; };
+		924B9444190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9442190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m */; };
+		924B9445190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9442190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m */; };
+		924B9448190CD7FB00B263AA /* ODALessonDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B9446190CD7FB00B263AA /* ODALessonDeserializer.h */; };
+		924B9449190CD7FB00B263AA /* ODALessonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9447190CD7FB00B263AA /* ODALessonDeserializer.m */; };
+		924B944A190CD7FB00B263AA /* ODALessonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B9447190CD7FB00B263AA /* ODALessonDeserializer.m */; };
+		924B944E190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.h in Headers */ = {isa = PBXBuildFile; fileRef = 924B944C190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.h */; };
+		924B944F190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B944D190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m */; };
+		924B9450190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B944D190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m */; };
 		928A6FE418E9407000392A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FE318E9407000392A6F /* XCTest.framework */; };
 		928A6FE518E9407000392A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCA18E9406F00392A6F /* Foundation.framework */; };
 		928A6FE618E9407000392A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A6FCE18E9406F00392A6F /* UIKit.framework */; };
@@ -125,6 +194,52 @@
 		924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsItemDeserializer.m; sourceTree = "<group>"; };
 		924B93D8190BDCB700B263AA /* ODANewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsItem.h; sourceTree = "<group>"; };
 		924B93D9190BDCB700B263AA /* ODANewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsItem.m; sourceTree = "<group>"; };
+		924B93DD190BE71E00B263AA /* ODAMinorDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAMinorDeserializer.m; sourceTree = "<group>"; };
+		924B93DE190BE71E00B263AA /* ODACourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACourse.h; sourceTree = "<group>"; };
+		924B93DF190BE71E00B263AA /* ODACourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACourse.m; sourceTree = "<group>"; };
+		924B93E0190BE71E00B263AA /* ODACourseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACourseDeserializer.h; sourceTree = "<group>"; };
+		924B93E1190BE71E00B263AA /* ODACourseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACourseDeserializer.m; sourceTree = "<group>"; };
+		924B93E2190BE71E00B263AA /* ODACourseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACourseResult.h; sourceTree = "<group>"; };
+		924B93E3190BE71E00B263AA /* ODACourseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACourseResult.m; sourceTree = "<group>"; };
+		924B93E4190BE71E00B263AA /* ODACourseResultDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACourseResultDeserializer.h; sourceTree = "<group>"; };
+		924B93E5190BE71E00B263AA /* ODACourseResultDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACourseResultDeserializer.m; sourceTree = "<group>"; };
+		924B93E6190BE71E00B263AA /* ODACourseResultsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACourseResultsClient.m; sourceTree = "<group>"; };
+		924B93E7190BE71E00B263AA /* ODACoursesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODACoursesClient.m; sourceTree = "<group>"; };
+		924B93E8190BE71E00B263AA /* ODAGroupRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroupRole.h; sourceTree = "<group>"; };
+		924B93E9190BE71E00B263AA /* ODAGroupRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroupRole.m; sourceTree = "<group>"; };
+		924B93EA190BE71E00B263AA /* ODAGroupRoleDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroupRoleDeserializer.h; sourceTree = "<group>"; };
+		924B93EB190BE71E00B263AA /* ODAGroupRoleDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroupRoleDeserializer.m; sourceTree = "<group>"; };
+		924B93EC190BE71E00B263AA /* ODAGroupRolesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAGroupRolesClient.m; sourceTree = "<group>"; };
+		924B93ED190BE71E00B263AA /* ODAMinor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAMinor.h; sourceTree = "<group>"; };
+		924B93EE190BE71E00B263AA /* ODAMinor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAMinor.m; sourceTree = "<group>"; };
+		924B93EF190BE71E00B263AA /* ODAMinorDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAMinorDeserializer.h; sourceTree = "<group>"; };
+		924B93F0190BE71E00B263AA /* ODAMinorsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAMinorsClient.m; sourceTree = "<group>"; };
+		924B93F1190BE71E00B263AA /* ODAScheduleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAScheduleClient.h; sourceTree = "<group>"; };
+		924B93F2190BE71E00B263AA /* ODAScheduleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODAScheduleClient.m; sourceTree = "<group>"; };
+		924B93F3190BE71E00B263AA /* ODATestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODATestResult.h; sourceTree = "<group>"; };
+		924B93F4190BE71E00B263AA /* ODATestResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODATestResult.m; sourceTree = "<group>"; };
+		924B93F5190BE71E00B263AA /* ODATestResultDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODATestResultDeserializer.h; sourceTree = "<group>"; };
+		924B93F6190BE71E00B263AA /* ODATestResultDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODATestResultDeserializer.m; sourceTree = "<group>"; };
+		924B93F7190BE71E00B263AA /* ODATestResultsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODATestResultsClient.m; sourceTree = "<group>"; };
+		924B93F8190BE71E00B263AA /* ODACourseResultsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACourseResultsClient.h; sourceTree = "<group>"; };
+		924B93F9190BE71E00B263AA /* ODACoursesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODACoursesClient.h; sourceTree = "<group>"; };
+		924B93FA190BE71E00B263AA /* ODAGroupRolesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAGroupRolesClient.h; sourceTree = "<group>"; };
+		924B93FB190BE71E00B263AA /* ODAMinorsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAMinorsClient.h; sourceTree = "<group>"; };
+		924B93FC190BE71E00B263AA /* ODATestResultsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODATestResultsClient.h; sourceTree = "<group>"; };
+		924B942D190BEA7300B263AA /* ODANewsFeedDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsFeedDeserializer.h; sourceTree = "<group>"; };
+		924B942E190BEA7300B263AA /* ODANewsFeedDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsFeedDeserializer.m; sourceTree = "<group>"; };
+		924B942F190BEA7300B263AA /* ODANewsFeedsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsFeedsClient.m; sourceTree = "<group>"; };
+		924B9430190BEA7300B263AA /* ODANewsFeedsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsFeedsClient.h; sourceTree = "<group>"; };
+		924B9437190C65A000B263AA /* ODANewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODANewsFeed.h; sourceTree = "<group>"; };
+		924B9438190C65A000B263AA /* ODANewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODANewsFeed.m; sourceTree = "<group>"; };
+		924B943C190C670700B263AA /* ODALesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODALesson.h; sourceTree = "<group>"; };
+		924B943D190C670700B263AA /* ODALesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODALesson.m; sourceTree = "<group>"; };
+		924B9441190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ODAISO8601.h"; sourceTree = "<group>"; };
+		924B9442190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ODAISO8601.m"; sourceTree = "<group>"; };
+		924B9446190CD7FB00B263AA /* ODALessonDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODALessonDeserializer.h; sourceTree = "<group>"; };
+		924B9447190CD7FB00B263AA /* ODALessonDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODALessonDeserializer.m; sourceTree = "<group>"; };
+		924B944C190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+ODARemovingNulls.h"; sourceTree = "<group>"; };
+		924B944D190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+ODARemovingNulls.m"; sourceTree = "<group>"; };
 		928A6FCA18E9406F00392A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		928A6FCC18E9406F00392A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		928A6FCE18E9406F00392A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -276,6 +391,10 @@
 				92CD98CC190567510095E5A9 /* ODARequestOperation.m */,
 				92CD98ED190637830095E5A9 /* ODAParameters.h */,
 				92CD98EE190637830095E5A9 /* ODAParameters.m */,
+				924B9441190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.h */,
+				924B9442190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m */,
+				924B944C190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.h */,
+				924B944D190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -283,6 +402,16 @@
 		928A701E18E94AE800392A6F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				924B93DE190BE71E00B263AA /* ODACourse.h */,
+				924B93DF190BE71E00B263AA /* ODACourse.m */,
+				924B93E2190BE71E00B263AA /* ODACourseResult.h */,
+				924B93E3190BE71E00B263AA /* ODACourseResult.m */,
+				924B93E8190BE71E00B263AA /* ODAGroupRole.h */,
+				924B93E9190BE71E00B263AA /* ODAGroupRole.m */,
+				924B93ED190BE71E00B263AA /* ODAMinor.h */,
+				924B93EE190BE71E00B263AA /* ODAMinor.m */,
+				924B93F3190BE71E00B263AA /* ODATestResult.h */,
+				924B93F4190BE71E00B263AA /* ODATestResult.m */,
 				928A701F18E94AF800392A6F /* ODAPerson.h */,
 				928A702018E94AF800392A6F /* ODAPerson.m */,
 				92CD98DD1905BABA0095E5A9 /* ODAGroup.h */,
@@ -297,6 +426,10 @@
 				924B93C5190B0D6600B263AA /* ODAAffiliation.m */,
 				924B93D8190BDCB700B263AA /* ODANewsItem.h */,
 				924B93D9190BDCB700B263AA /* ODANewsItem.m */,
+				924B9437190C65A000B263AA /* ODANewsFeed.h */,
+				924B9438190C65A000B263AA /* ODANewsFeed.m */,
+				924B943C190C670700B263AA /* ODALesson.h */,
+				924B943D190C670700B263AA /* ODALesson.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -304,6 +437,8 @@
 		92CD98D21905B3C40095E5A9 /* Serializers */ = {
 			isa = PBXGroup;
 			children = (
+				924B942D190BEA7300B263AA /* ODANewsFeedDeserializer.h */,
+				924B942E190BEA7300B263AA /* ODANewsFeedDeserializer.m */,
 				92CD98D31905B3DB0095E5A9 /* ODAPersonDeserializer.h */,
 				92CD98D41905B3DB0095E5A9 /* ODAPersonDeserializer.m */,
 				92CD98D81905B5AE0095E5A9 /* ODABaseDeserializer.h */,
@@ -318,6 +453,18 @@
 				924B93C0190B0D3300B263AA /* ODAAffiliationDeserializer.m */,
 				924B93D3190BDBC400B263AA /* ODANewsItemDeserializer.h */,
 				924B93D4190BDBC400B263AA /* ODANewsItemDeserializer.m */,
+				924B93EF190BE71E00B263AA /* ODAMinorDeserializer.h */,
+				924B93DD190BE71E00B263AA /* ODAMinorDeserializer.m */,
+				924B93E0190BE71E00B263AA /* ODACourseDeserializer.h */,
+				924B93E1190BE71E00B263AA /* ODACourseDeserializer.m */,
+				924B93E4190BE71E00B263AA /* ODACourseResultDeserializer.h */,
+				924B93E5190BE71E00B263AA /* ODACourseResultDeserializer.m */,
+				924B93EA190BE71E00B263AA /* ODAGroupRoleDeserializer.h */,
+				924B93EB190BE71E00B263AA /* ODAGroupRoleDeserializer.m */,
+				924B93F5190BE71E00B263AA /* ODATestResultDeserializer.h */,
+				924B93F6190BE71E00B263AA /* ODATestResultDeserializer.m */,
+				924B9446190CD7FB00B263AA /* ODALessonDeserializer.h */,
+				924B9447190CD7FB00B263AA /* ODALessonDeserializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -325,10 +472,10 @@
 		92CD9901190645E20095E5A9 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				928A701B18E949FD00392A6F /* ODAPersonsClient.h */,
-				928A701C18E949FD00392A6F /* ODAPersonsClient.m */,
 				92CD98C619055C450095E5A9 /* ODAAbstractClient.h */,
 				92CD98C719055C450095E5A9 /* ODAAbstractClient.m */,
+				928A701B18E949FD00392A6F /* ODAPersonsClient.h */,
+				928A701C18E949FD00392A6F /* ODAPersonsClient.m */,
 				92CD98C9190560760095E5A9 /* ODAAbstractClient-Protected.h */,
 				92CD98F2190640750095E5A9 /* ODABuildingsClient.h */,
 				92CD98F3190640750095E5A9 /* ODABuildingsClient.m */,
@@ -340,6 +487,20 @@
 				924B93CA190B134600B263AA /* ODAAffiliationsClient.m */,
 				924B93CE190BDAFF00B263AA /* ODANewsItemsClient.h */,
 				924B93CF190BDAFF00B263AA /* ODANewsItemsClient.m */,
+				924B93F8190BE71E00B263AA /* ODACourseResultsClient.h */,
+				924B93E6190BE71E00B263AA /* ODACourseResultsClient.m */,
+				924B93FA190BE71E00B263AA /* ODAGroupRolesClient.h */,
+				924B93EC190BE71E00B263AA /* ODAGroupRolesClient.m */,
+				924B93FB190BE71E00B263AA /* ODAMinorsClient.h */,
+				924B93F0190BE71E00B263AA /* ODAMinorsClient.m */,
+				924B93F1190BE71E00B263AA /* ODAScheduleClient.h */,
+				924B93F2190BE71E00B263AA /* ODAScheduleClient.m */,
+				924B93FC190BE71E00B263AA /* ODATestResultsClient.h */,
+				924B93F7190BE71E00B263AA /* ODATestResultsClient.m */,
+				924B93F9190BE71E00B263AA /* ODACoursesClient.h */,
+				924B93E7190BE71E00B263AA /* ODACoursesClient.m */,
+				924B9430190BEA7300B263AA /* ODANewsFeedsClient.h */,
+				924B942F190BEA7300B263AA /* ODANewsFeedsClient.m */,
 			);
 			name = Clients;
 			sourceTree = "<group>";
@@ -351,27 +512,50 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924B93FF190BE71E00B263AA /* ODACourse.h in Headers */,
+				924B942C190BE71E00B263AA /* ODATestResultsClient.h in Headers */,
+				924B9431190BEA7300B263AA /* ODANewsFeedDeserializer.h in Headers */,
 				924B93C6190B0D6600B263AA /* ODAAffiliation.h in Headers */,
+				924B9429190BE71E00B263AA /* ODACoursesClient.h in Headers */,
 				92CD98FE1906434F0095E5A9 /* ODABuildingDeserializer.h in Headers */,
 				92CD98EF190637830095E5A9 /* ODAParameters.h in Headers */,
 				924B93BD190B087400B263AA /* ODAGroupsClient.h in Headers */,
 				928A700F18E942E000392A6F /* ODAClient.h in Headers */,
+				924B9443190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.h in Headers */,
 				92CD990E190649870095E5A9 /* ODARoom.h in Headers */,
+				924B944E190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.h in Headers */,
 				924B93D5190BDBC400B263AA /* ODANewsItemDeserializer.h in Headers */,
+				924B9439190C65A000B263AA /* ODANewsFeed.h in Headers */,
+				924B941A190BE71E00B263AA /* ODAMinorDeserializer.h in Headers */,
 				92CD98F4190640750095E5A9 /* ODABuildingsClient.h in Headers */,
 				92CD98DF1905BABA0095E5A9 /* ODAGroup.h in Headers */,
 				92CD98F91906429B0095E5A9 /* ODABuilding.h in Headers */,
+				924B942B190BE71E00B263AA /* ODAMinorsClient.h in Headers */,
 				92CD98EA1905BBCC0095E5A9 /* ODAGroupDeserializer.h in Headers */,
+				924B9436190BEA7300B263AA /* ODANewsFeedsClient.h in Headers */,
 				924B93DA190BDCB700B263AA /* ODANewsItem.h in Headers */,
+				924B9405190BE71E00B263AA /* ODACourseResult.h in Headers */,
+				924B9408190BE71E00B263AA /* ODACourseResultDeserializer.h in Headers */,
+				924B9448190CD7FB00B263AA /* ODALessonDeserializer.h in Headers */,
+				924B9428190BE71E00B263AA /* ODACourseResultsClient.h in Headers */,
 				928A701018E942E000392A6F /* OpenOnderwijsAPI.h in Headers */,
 				924B93CB190B134600B263AA /* ODAAffiliationsClient.h in Headers */,
+				924B9420190BE71E00B263AA /* ODATestResult.h in Headers */,
 				928A702318E94C5B00392A6F /* ODAPersonsClient.h in Headers */,
 				928A702218E94C5B00392A6F /* ODAPerson.h in Headers */,
 				92CD98E41905BB500095E5A9 /* ODAEntity.h in Headers */,
 				92CD98CA190561130095E5A9 /* ODAAbstractClient.h in Headers */,
+				924B9402190BE71E00B263AA /* ODACourseDeserializer.h in Headers */,
+				924B941D190BE71E00B263AA /* ODAScheduleClient.h in Headers */,
+				924B9412190BE71E00B263AA /* ODAGroupRoleDeserializer.h in Headers */,
 				92CD9905190648360095E5A9 /* ODARoomsClient.h in Headers */,
+				924B9423190BE71E00B263AA /* ODATestResultDeserializer.h in Headers */,
+				924B942A190BE71E00B263AA /* ODAGroupRolesClient.h in Headers */,
 				924B93C1190B0D3300B263AA /* ODAAffiliationDeserializer.h in Headers */,
+				924B9417190BE71E00B263AA /* ODAMinor.h in Headers */,
 				924B93D0190BDAFF00B263AA /* ODANewsItemsClient.h in Headers */,
+				924B940F190BE71E00B263AA /* ODAGroupRole.h in Headers */,
+				924B943E190C670700B263AA /* ODALesson.h in Headers */,
 				92CD98D51905B3DB0095E5A9 /* ODAPersonDeserializer.h in Headers */,
 				92CD98DA1905B5AE0095E5A9 /* ODABaseDeserializer.h in Headers */,
 				92CD9909190648D30095E5A9 /* ODARoomDeserializer.h in Headers */,
@@ -490,29 +674,52 @@
 			files = (
 				92CD98FA1906429B0095E5A9 /* ODABuilding.m in Sources */,
 				92CD98EB1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
+				924B943F190C670700B263AA /* ODALesson.m in Sources */,
+				924B9432190BEA7300B263AA /* ODANewsFeedDeserializer.m in Sources */,
+				924B9418190BE71E00B263AA /* ODAMinor.m in Sources */,
+				924B9403190BE71E00B263AA /* ODACourseDeserializer.m in Sources */,
+				924B941E190BE71E00B263AA /* ODAScheduleClient.m in Sources */,
 				924B93C7190B0D6600B263AA /* ODAAffiliation.m in Sources */,
+				924B940D190BE71E00B263AA /* ODACoursesClient.m in Sources */,
 				92CD98E01905BABA0095E5A9 /* ODAGroup.m in Sources */,
 				924B93BC190B060900B263AA /* ODAGroupsClient.m in Sources */,
 				92CD990F190649870095E5A9 /* ODARoom.m in Sources */,
 				92CD98F0190637830095E5A9 /* ODAParameters.m in Sources */,
 				92CD98F5190640750095E5A9 /* ODABuildingsClient.m in Sources */,
+				924B944F190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m in Sources */,
+				924B9444190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m in Sources */,
+				924B9424190BE71E00B263AA /* ODATestResultDeserializer.m in Sources */,
 				924B93DB190BDCB700B263AA /* ODANewsItem.m in Sources */,
+				924B940B190BE71E00B263AA /* ODACourseResultsClient.m in Sources */,
+				924B941B190BE71E00B263AA /* ODAMinorsClient.m in Sources */,
+				924B943A190C65A000B263AA /* ODANewsFeed.m in Sources */,
 				928A6FF018E9407000392A6F /* OpenOnderwijsAPI_objcTests.m in Sources */,
 				928A702118E94AF800392A6F /* ODAPerson.m in Sources */,
+				924B9410190BE71E00B263AA /* ODAGroupRole.m in Sources */,
+				924B9426190BE71E00B263AA /* ODATestResultsClient.m in Sources */,
 				92CD98DB1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
 				928A700D18E9423800392A6F /* ODAClient.m in Sources */,
 				928A701D18E949FD00392A6F /* ODAPersonsClient.m in Sources */,
 				924B93C2190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */,
+				924B9434190BEA7300B263AA /* ODANewsFeedsClient.m in Sources */,
+				924B9421190BE71E00B263AA /* ODATestResult.m in Sources */,
 				924B93CC190B134600B263AA /* ODAAffiliationsClient.m in Sources */,
+				924B9449190CD7FB00B263AA /* ODALessonDeserializer.m in Sources */,
 				92CD98D61905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
 				92CD990A190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
 				92CD98E51905BB500095E5A9 /* ODAEntity.m in Sources */,
 				92CD98CD190567510095E5A9 /* ODARequestOperation.m in Sources */,
+				924B9400190BE71E00B263AA /* ODACourse.m in Sources */,
 				924B93D1190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */,
 				92CD98C819055C450095E5A9 /* ODAAbstractClient.m in Sources */,
+				924B9413190BE71E00B263AA /* ODAGroupRoleDeserializer.m in Sources */,
 				92CD99041906482D0095E5A9 /* ODARoomsClient.m in Sources */,
+				924B9409190BE71E00B263AA /* ODACourseResultDeserializer.m in Sources */,
 				92CD98FF1906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
 				924B93D6190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */,
+				924B93FD190BE71E00B263AA /* ODAMinorDeserializer.m in Sources */,
+				924B9406190BE71E00B263AA /* ODACourseResult.m in Sources */,
+				924B9415190BE71E00B263AA /* ODAGroupRolesClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,28 +727,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924B9435190BEA7300B263AA /* ODANewsFeedsClient.m in Sources */,
 				92CD98F1190637830095E5A9 /* ODAParameters.m in Sources */,
+				924B9422190BE71E00B263AA /* ODATestResult.m in Sources */,
 				92CD9910190649870095E5A9 /* ODARoom.m in Sources */,
+				924B9433190BEA7300B263AA /* ODANewsFeedDeserializer.m in Sources */,
 				92CD99001906434F0095E5A9 /* ODABuildingDeserializer.m in Sources */,
 				92CD98CF1905AE520095E5A9 /* ODAAbstractClient.m in Sources */,
+				924B9450190CF7E400B263AA /* NSJSONSerialization+ODARemovingNulls.m in Sources */,
+				924B940A190BE71E00B263AA /* ODACourseResultDeserializer.m in Sources */,
+				924B9427190BE71E00B263AA /* ODATestResultsClient.m in Sources */,
 				92CD98D11905AE920095E5A9 /* ODARequestOperation.m in Sources */,
+				924B940E190BE71E00B263AA /* ODACoursesClient.m in Sources */,
+				924B941C190BE71E00B263AA /* ODAMinorsClient.m in Sources */,
 				924B93D7190BDBC400B263AA /* ODANewsItemDeserializer.m in Sources */,
 				924B93C8190B0D6600B263AA /* ODAAffiliation.m in Sources */,
 				924B93BE190B093C00B263AA /* ODAGroupsClient.m in Sources */,
 				924B93DC190BDCB700B263AA /* ODANewsItem.m in Sources */,
 				92CD990B190648D30095E5A9 /* ODARoomDeserializer.m in Sources */,
+				924B940C190BE71E00B263AA /* ODACourseResultsClient.m in Sources */,
 				924B93CD190B134600B263AA /* ODAAffiliationsClient.m in Sources */,
+				924B941F190BE71E00B263AA /* ODAScheduleClient.m in Sources */,
 				92CD98F6190640750095E5A9 /* ODABuildingsClient.m in Sources */,
+				924B9407190BE71E00B263AA /* ODACourseResult.m in Sources */,
+				924B944A190CD7FB00B263AA /* ODALessonDeserializer.m in Sources */,
 				92CD98DC1905B5AE0095E5A9 /* ODABaseDeserializer.m in Sources */,
 				92CD98D71905B3DB0095E5A9 /* ODAPersonDeserializer.m in Sources */,
+				924B9445190CCEEB00B263AA /* NSDateFormatter+ODAISO8601.m in Sources */,
 				924B93C3190B0D3300B263AA /* ODAAffiliationDeserializer.m in Sources */,
 				92CD99061906483E0095E5A9 /* ODARoomsClient.m in Sources */,
 				92CD98FB1906429B0095E5A9 /* ODABuilding.m in Sources */,
+				924B9416190BE71E00B263AA /* ODAGroupRolesClient.m in Sources */,
+				924B9425190BE71E00B263AA /* ODATestResultDeserializer.m in Sources */,
 				92CD98D01905AE5E0095E5A9 /* ODAPerson.m in Sources */,
 				92CD98CE1905AE4E0095E5A9 /* ODAPersonsClient.m in Sources */,
+				924B9414190BE71E00B263AA /* ODAGroupRoleDeserializer.m in Sources */,
+				924B9401190BE71E00B263AA /* ODACourse.m in Sources */,
+				924B9419190BE71E00B263AA /* ODAMinor.m in Sources */,
+				924B9404190BE71E00B263AA /* ODACourseDeserializer.m in Sources */,
 				924B93D2190BDAFF00B263AA /* ODANewsItemsClient.m in Sources */,
 				92CD98E11905BABA0095E5A9 /* ODAGroup.m in Sources */,
 				92CD98EC1905BBCC0095E5A9 /* ODAGroupDeserializer.m in Sources */,
+				924B9411190BE71E00B263AA /* ODAGroupRole.m in Sources */,
+				924B93FE190BE71E00B263AA /* ODAMinorDeserializer.m in Sources */,
+				924B943B190C65A000B263AA /* ODANewsFeed.m in Sources */,
+				924B9440190C670700B263AA /* ODALesson.m in Sources */,
 				928A701818E944F800392A6F /* ODAClient.m in Sources */,
 				92CD98E61905BB500095E5A9 /* ODAEntity.m in Sources */,
 			);

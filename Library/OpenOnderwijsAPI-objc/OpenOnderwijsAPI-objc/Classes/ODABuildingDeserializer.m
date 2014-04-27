@@ -15,8 +15,6 @@
     ODABuilding *building = [[ODABuilding alloc] init];
     [self mapMetadataFieldFromDictionary:dictionary toEntity:building];
     
-    building.buildingID = [dictionary objectForKey:@"id"];
-    
     [self mapStringFields:@[@"name", @"address", @"postalCode", @"city"] fromDictionary:dictionary toEntity:building];
     
     building.buildingDescription = [dictionary objectForKey:@"description"];

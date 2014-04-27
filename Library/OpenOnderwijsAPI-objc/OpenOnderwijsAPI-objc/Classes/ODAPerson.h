@@ -11,7 +11,6 @@
 
 @interface ODAPerson : ODAEntity
 
-@property (nonatomic, copy) NSString *personID;
 @property (nonatomic, copy) NSString *givenName;
 @property (nonatomic, copy) NSString *surName;
 @property (nonatomic, copy) NSString *displayName;

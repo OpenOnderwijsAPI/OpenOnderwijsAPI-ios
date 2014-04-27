@@ -11,7 +11,6 @@
 
 @interface ODARoom : ODAEntity
 
-@property (nonatomic, copy) NSString *roomID;
 @property (nonatomic, copy) NSString *abbreviation;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *roomDescription;

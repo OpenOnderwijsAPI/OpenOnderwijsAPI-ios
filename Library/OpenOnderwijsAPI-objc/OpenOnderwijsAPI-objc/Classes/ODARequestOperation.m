@@ -7,23 +7,26 @@
 //
 
 #import "ODARequestOperation.h"
+#import "NSJSONSerialization+ODARemovingNulls.h"
 
 @interface ODARequestOperation () <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 @property (nonatomic, strong) NSMutableData *data;
-@property (nonatomic, strong) NSString *baseURL;
+@property (nonatomic, copy) NSString *baseURL;
 @property (nonatomic, strong) NSURLConnection *connection;
+@property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, strong) ODARequestCompleteBlock completeBlock;
-
+@property (nonatomic, assign) NSInteger httpStatusCode;
 @end
 
 @implementation ODARequestOperation
 
-- (id)initWithBaseURL:(NSString *)baseURL {
+- (id)initWithBaseURL:(NSString *)baseURL accessToken:(NSString *)accessToken {
     self = [super init];
     if (self) {
         self.data = [[NSMutableData alloc] init];
         self.baseURL = baseURL;
+        self.accessToken = accessToken;
     }
     return self;
 }
@@ -31,6 +34,9 @@
 - (void)GET:(NSString *)resourceURL onComplete:(ODARequestCompleteBlock)complete {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[self.baseURL stringByAppendingString:resourceURL]]];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    if (self.accessToken) {
+        [request setValue:[NSString stringWithFormat:@"Bearer %@", self.accessToken] forHTTPHeaderField:@"Authorization"];
+    }
     self.completeBlock = complete;
     self.connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
     [self.connection start];
@@ -49,13 +55,21 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     if (self.completeBlock) {
         NSError *error = nil;
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:&error];
-        if (!error) {
-            self.completeBlock(YES, dict);
+        NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:self.data options:NSJSONReadingMutableContainers error:&error removingNulls:YES ignoreArrays:NO];
+        // We create mutablecontainers to remove the nulls, but we want the app to work with unmutable variants.
+        NSDictionary *resultDict = [NSDictionary dictionaryWithDictionary:dict];
+        if (self.httpStatusCode >= 400 || error) {
+            // Something went wrong.
+            self.completeBlock(NO, resultDict);
         } else {
-            self.completeBlock(NO, nil);
+            self.completeBlock(YES, resultDict);
         }
     }
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    self.httpStatusCode = httpResponse.statusCode;
 }
 
 

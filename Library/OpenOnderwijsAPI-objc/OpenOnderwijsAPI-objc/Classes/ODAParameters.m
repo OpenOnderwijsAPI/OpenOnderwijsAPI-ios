@@ -7,6 +7,7 @@
 //
 
 #import "ODAParameters.h"
+#import "NSDateFormatter+ODAISO8601.h"
 
 @interface ODAParameters ()
 
@@ -35,15 +36,16 @@
 - (NSDictionary *)dictionaryRepresentation {
     
     NSMutableDictionary *result = [[NSMutableDictionary alloc] initWithDictionary:self.values];
+    NSDateFormatter *formatter = [NSDateFormatter ODAISO8601_dateFormatter_noMillis];
     
     if (self.page > 0) {
         [result setObject:[NSString stringWithFormat:@"%ld", (long)self.page] forKey:@"page"];
     }
     if (self.startDate) {
-        [result setObject:@"todo" forKey:@"start"];
+        [result setObject:[formatter stringFromDate:self.startDate] forKey:@"start"];
     }
     if (self.endDate) {
-        [result setObject:@"todo" forKey:@"end"];
+        [result setObject:[formatter stringFromDate:self.endDate] forKey:@"end"];
     }
     if (self.searchQuery) {
         [result setObject:self.searchQuery forKey:@"q"];

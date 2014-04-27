@@ -29,7 +29,7 @@
 }
 
 - (void)GET:(NSString *)resourceURL onComplete:(ODARequestCompleteBlock)complete {
-    ODARequestOperation *operation = [[ODARequestOperation alloc] initWithBaseURL:self.baseURL];
+    ODARequestOperation *operation = [[ODARequestOperation alloc] initWithBaseURL:self.baseURL accessToken:self.accessToken];
     [operation GET:resourceURL onComplete:complete];
 }
 
@@ -44,14 +44,35 @@
     NSString *resourceURL = [self urlFromString:url appendingParams:[params dictionaryRepresentation]];
     [self GET:resourceURL onComplete:^(BOOL success, NSDictionary *data) {
         NSInteger itemCount = 0;
-        if (data[@"meta"][@"thisPage"]) {
-            itemCount = [data[@"meta"][@"thisPage"] integerValue];
+        if (success) {
+            if (data[@"meta"][@"thisPage"]) {
+                itemCount = [data[@"meta"][@"thisPage"] integerValue];
+            }
+            NSMutableArray *list = [[NSMutableArray alloc] initWithCapacity:itemCount];
+            for (NSDictionary *itemDict in [data objectForKey:@"data"]) {
+                [list addObject:[serializer deserialize:itemDict]];
+            }
+            complete(success, [NSArray arrayWithArray:list]);
+        } else {
+            self.lastError = data;
+            complete(success, nil);
         }
-        NSMutableArray *list = [[NSMutableArray alloc] initWithCapacity:itemCount];
-        for (NSDictionary *itemDict in [data objectForKey:@"data"]) {
-            [list addObject:[serializer deserialize:itemDict]];
+    }];
+}
+
+- (void)getEntityForURL:(NSString *)url
+         withSerializer:(ODABaseDeserializer *)serializer
+         withParameters:(ODAParameters *)params
+             onComplete:(ODAEntityCompleteBlock)complete {
+    NSString *resourceURL = [self urlFromString:url appendingParams:[params dictionaryRepresentation]];
+    [self GET:resourceURL onComplete:^(BOOL success, NSDictionary *data) {
+        id entity = nil;
+        if (success) {
+            entity = [serializer deserialize:data];
+        } else {
+            self.lastError = data;
         }
-        complete(success, [NSArray arrayWithArray:list]);
+        complete(success, entity);
     }];
 }
 

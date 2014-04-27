@@ -12,6 +12,8 @@
 
 @interface ODAAbstractClient ()
 
+@property (nonatomic, readwrite, strong) NSDictionary *lastError;
+
 - (void)GET:(NSString *)resourceURL onComplete:(ODARequestCompleteBlock)complete;
 - (NSString *)urlFromString:(NSString *)url appendingParams:(NSDictionary *)params;
 
@@ -19,5 +21,10 @@
        withSerializer:(ODABaseDeserializer *)serializer
        withParameters:(ODAParameters *)params
            onComplete:(ODAListCompleteBlock)complete;
+
+- (void)getEntityForURL:(NSString *)url
+         withSerializer:(ODABaseDeserializer *)serializer
+         withParameters:(ODAParameters *)params
+             onComplete:(ODAEntityCompleteBlock)complete;
 
 @end

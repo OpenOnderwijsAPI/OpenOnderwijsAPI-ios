@@ -11,7 +11,6 @@
 
 @interface ODABuilding : ODAEntity
 
-@property (nonatomic, copy) NSString *buildingID;
 @property (nonatomic, copy) NSString *abbreviation;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *buildingDescription;

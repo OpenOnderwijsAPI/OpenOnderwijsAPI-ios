@@ -8,6 +8,7 @@
 
 #import "ODABaseDeserializer.h"
 #import "ODAEntity.h"
+#import "NSDateFormatter+ODAISO8601.h"
 
 @implementation ODABaseDeserializer
 
@@ -26,7 +27,27 @@
         entity.resourceURL = [dictionary objectForKey:@"url"];
     }
     
-    // todo lastModified (not currently present in api)
+    if ([[dictionary allKeys] containsObject:@"lastModified"]) {
+        entity.lastModified = [self dateFromString:[dictionary objectForKey:@"lastModified"]];
+    }
+    
+    if ([[dictionary allKeys] containsObject:@"id"]) {
+        entity.identifier = [dictionary objectForKey:@"id"];
+    }
+}
+
+- (NSDate *)dateFromString:(NSString *)string {
+    if (string) {
+        if ([string length] <= 11 ) {
+            return [[NSDateFormatter ODAISO8601_dateFormatter_dateOnly] dateFromString:string];
+        } else if ([string rangeOfString:@"."].location == NSNotFound) {
+            // iso string without millis
+            return [[NSDateFormatter ODAISO8601_dateFormatter_noMillis] dateFromString:string];
+        } else {
+            return [[NSDateFormatter ODAISO8601_dateFormatter_millis] dateFromString:string];
+        }
+    }
+    return nil;
 }
 
 - (id)deserialize:(NSDictionary *)dictionary {

@@ -29,9 +29,7 @@
         group.type = [dictionary objectForKey:@"type"];
     }
     
-    if ([dictionary objectForKey:@"url"]) {
-        group.resourceURL = [dictionary objectForKey:@"url"];
-    } else if ([dictionary objectForKey:@"group"]) { // In some calls the url is set in group key.
+    if ([dictionary objectForKey:@"group"]) { // In some calls the url is set in group key, which the base serializer misses.
         group.resourceURL = [dictionary objectForKey:@"group"];
     }
     

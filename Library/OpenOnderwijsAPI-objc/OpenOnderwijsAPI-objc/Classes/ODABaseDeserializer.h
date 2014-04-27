@@ -17,4 +17,7 @@
 - (void)mapStringFields:(NSArray *)fieldNames fromDictionary:(NSDictionary *)dictionary toEntity:(ODAEntity *)entity;
 - (void)mapMetadataFieldFromDictionary:(NSDictionary *)dictionary toEntity:(ODAEntity *)entity;
 
+// convience iso 8601 conversion
+- (NSDate *)dateFromString:(NSString *)string;
+
 @end

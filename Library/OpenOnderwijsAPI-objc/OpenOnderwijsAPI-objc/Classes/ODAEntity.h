@@ -10,6 +10,7 @@
 
 @interface ODAEntity : NSObject
 
+@property (nonatomic, copy) NSString *identifier;
 @property (nonatomic, copy) NSString *resourceURL;
 @property (nonatomic, strong) NSDate *lastModified;
 

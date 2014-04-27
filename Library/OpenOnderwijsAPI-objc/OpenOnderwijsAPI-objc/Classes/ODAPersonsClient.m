@@ -13,15 +13,24 @@
 @implementation ODAPersonsClient
 
 -(void)getById:(NSString *)personId onComplete:(ODAPersonCompleteBlock)complete {
-    [self GET:[NSString stringWithFormat:@"/persons/%@", personId] onComplete:^(BOOL success, NSDictionary *data) {
-        ODAPersonDeserializer *serializer = [[ODAPersonDeserializer alloc] init];
-        complete(success, [serializer deserialize:data]);
-    }];
+    ODAPersonDeserializer *serializer = [[ODAPersonDeserializer alloc] init];
+    [self getEntityForURL:[NSString stringWithFormat:@"/persons/%@", personId]
+           withSerializer:serializer
+           withParameters:nil
+               onComplete:complete];
 }
 
 -(void)getList:(ODAParameters *)params onComplete:(ODAListCompleteBlock)complete {
     ODAPersonDeserializer *serializer = [[ODAPersonDeserializer alloc] init];
     [self getListForURL:@"/persons" withSerializer:serializer withParameters:params onComplete:complete];
+}
+
+-(void)getMeOnComplete:(ODAPersonCompleteBlock)complete {
+    if (!self.accessToken) {
+        complete(NO, nil);
+    } else {
+        [self getById:@"@me" onComplete:complete];
+    }
 }
 
 @end
