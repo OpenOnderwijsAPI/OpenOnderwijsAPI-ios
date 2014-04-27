@@ -75,7 +75,7 @@ The library can work with OAuth2. It does not make any assumptions on your OAuth
 
 The demo application contains a working OAuth sample that can serve as reference for OAuth2 setup. Regardless of what Oauth implementation you use, if you need to authorize a call using an access token, you can do so like this:
 
-    apiClient.personsClient.accessToken = self.accessToken;
+    apiClient.personsClient.accessToken = @"youraccesstoken";
     [apiClient.personsClient getMeOnComplete:^(BOOL success, ODAPerson *person) {
         
         if (success) {
