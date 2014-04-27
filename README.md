@@ -57,6 +57,8 @@ The success variable indicates whether the call was succesful. If NO, the person
 
 To find out if the API sent an error message, you can inspect apiClient.personsClient.lastError, which will be the raw dictionary that the API returned.
 
+For a list of available clients see the ODAClient.h header file.
+
 A word on semi-populated objects
 --------------------------------
 Note that related objects in the API may not be fully populated after a call.

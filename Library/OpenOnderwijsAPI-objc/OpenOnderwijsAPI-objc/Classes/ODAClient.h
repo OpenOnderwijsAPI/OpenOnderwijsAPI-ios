@@ -21,8 +21,13 @@
 #import "ODATestResultsClient.h"
 #import "ODAMinorsClient.h"
 
+// The main api object that provides access to all modules.
 @interface ODAClient : NSObject
 
+// Initialize the api with an endpoint. If you're working with
+// the reference api implementation, this would for example be
+// http://localhost:8000 but it can be any valid endpoint where
+// an API runs that complies to the OpenOnderwijsDataAPI.
 - (id)initWithBaseURL:(NSString *)baseURL;
 
 @property (nonatomic, readonly) ODAPersonsClient *personsClient;
