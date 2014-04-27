@@ -41,7 +41,7 @@ Or lists of data:
     ODAParameters *listParams = [[ODAParameters alloc] init];
     listParams.page = 1;
     listParams.searchQuery = @"bibber";
-
+    
     // get the list of the persons on the first page
     [apiClient.personsClient getList:listParams onComplete:^(BOOL success, NSArray *personList) {
      
@@ -92,6 +92,12 @@ Reset the token to nil after the call if you don't want to authorize all calls o
 Demo
 ----
 A simple demo application is privided in the Demo folder, which calls a number of methods on the API and demonstrates how to work with OAuth2.
+
+To setup the demo:
+
+* Run 'pod install' inside the repository root (where the Podfile is located). This installs dependencies that the demo uses using cocoapods.
+* Open the OpenOnderwijsAPI-demo.xcworkspace workspace in Xcode
+* Run the demo.
 
 If you want to try out OAuth2 support using the demo app and the reference python implementation, follow these steps:
 
