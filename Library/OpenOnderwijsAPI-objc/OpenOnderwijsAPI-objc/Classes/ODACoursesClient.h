@@ -15,6 +15,7 @@ typedef void (^ODACourseCompleteBlock)(BOOL success, ODACourse *course);
 
 @interface ODACoursesClient : ODAAbstractClient
 
+// Get a specific course by its id.
 - (void)getById:(NSString *)courseId onComplete:(ODACourseCompleteBlock)complete;
 
 @end

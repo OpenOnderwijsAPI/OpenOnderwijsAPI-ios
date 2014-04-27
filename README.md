@@ -57,6 +57,16 @@ The success variable indicates whether the call was succesful. If NO, the person
 
 To find out if the API sent an error message, you can inspect apiClient.personsClient.lastError, which will be the raw dictionary that the API returned.
 
+A word on semi-populated objects
+--------------------------------
+Note that related objects in the API may not be fully populated after a call.
+
+For example, if you retrieve a person's schedule, some details will be included on the room (name and description) but the API does NOT return 'fat objects', so the room object will not be fully populated.
+
+If you want to display the room details, you can use the RoomsClient to retrieve the full room, passing in the id that you got in the partial object.
+
+    [apiClient.roomsClient getById:lesson.room.identifier onComplete:.....]
+
 Working with OAuth2
 -------------------
 The library can work with OAuth2. It does not make any assumptions on your OAuth implementation, other than the fact that it uses the accessToken to call the api.

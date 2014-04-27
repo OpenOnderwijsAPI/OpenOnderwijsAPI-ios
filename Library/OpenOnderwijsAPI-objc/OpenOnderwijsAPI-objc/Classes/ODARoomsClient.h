@@ -15,6 +15,7 @@ typedef void (^ODARoomCompleteBlock)(BOOL success, ODARoom *room);
 
 @interface ODARoomsClient : ODAAbstractClient
 
+// Get a specific room by its id.
 - (void)getById:(NSString *)roomId onComplete:(ODARoomCompleteBlock)complete;
 
 @end

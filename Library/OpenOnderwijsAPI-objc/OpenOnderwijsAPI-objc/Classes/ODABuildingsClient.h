@@ -15,6 +15,7 @@ typedef void (^ODABuildingCompleteBlock)(BOOL success, ODABuilding *building);
 
 @interface ODABuildingsClient : ODAAbstractClient
 
+// Get a specific building by its id.
 - (void)getById:(NSString *)buildingId onComplete:(ODABuildingCompleteBlock)complete;
 
 @end

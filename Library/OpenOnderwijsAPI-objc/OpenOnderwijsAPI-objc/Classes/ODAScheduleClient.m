@@ -12,8 +12,8 @@
 
 @implementation ODAScheduleClient
 
--(void)getById:(NSString *)scheduleId onComplete:(ODAScheduleCompleteBlock)complete {
-    [self GET:[NSString stringWithFormat:@"/schedule/%@", scheduleId] onComplete:^(BOOL success, NSDictionary *data) {
+-(void)getById:(NSString *)lessonId onComplete:(ODAScheduleCompleteBlock)complete {
+    [self GET:[NSString stringWithFormat:@"/schedule/%@", lessonId] onComplete:^(BOOL success, NSDictionary *data) {
         ODALessonDeserializer *serializer = [[ODALessonDeserializer alloc] init];
         complete(success, [serializer deserialize:data]);
     }];

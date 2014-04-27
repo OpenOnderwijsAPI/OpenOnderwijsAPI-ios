@@ -14,6 +14,7 @@ typedef void (^ODAAffiliationCompleteBlock)(BOOL success, ODAAffiliation *group)
 
 @interface ODAAffiliationsClient : ODAAbstractClient
 
+// Get a specific affiliation by its id.
 - (void)getById:(NSString *)affiliationId onComplete:(ODAAffiliationCompleteBlock)complete;
 
 @end

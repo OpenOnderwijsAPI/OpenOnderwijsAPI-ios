@@ -15,6 +15,7 @@ typedef void (^ODAGroupRoleCompleteBlock)(BOOL success, ODAGroupRole *groupRole)
 
 @interface ODAGroupRolesClient : ODAAbstractClient
 
+// Get a specific role by its id.
 - (void)getById:(NSString *)groupRoleId onComplete:(ODAGroupRoleCompleteBlock)complete;
 
 @end

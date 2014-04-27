@@ -15,6 +15,7 @@ typedef void (^ODAMinorCompleteBlock)(BOOL success, ODAMinor *minor);
 
 @interface ODAMinorsClient : ODAAbstractClient
 
+// Get a specific minor by its id.
 - (void)getById:(NSString *)minorId onComplete:(ODAMinorCompleteBlock)complete;
 
 @end

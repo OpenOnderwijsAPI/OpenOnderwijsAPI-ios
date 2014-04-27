@@ -15,6 +15,7 @@ typedef void (^ODANewsFeedCompleteBlock)(BOOL success, ODANewsFeed *newsFeed);
 
 @interface ODANewsFeedsClient : ODAAbstractClient
 
+// Get a specific news feed by its id.
 - (void)getById:(NSString *)newsFeedId onComplete:(ODANewsFeedCompleteBlock)complete;
 
 @end

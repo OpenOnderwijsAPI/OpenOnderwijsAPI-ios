@@ -15,6 +15,7 @@ typedef void (^ODANewsItemCompleteBlock)(BOOL success, ODANewsItem *newsItem);
 
 @interface ODANewsItemsClient : ODAAbstractClient
 
+// Get a specific newsitem by its id.
 - (void)getById:(NSString *)newsItemId onComplete:(ODANewsItemCompleteBlock)complete;
 
 @end

@@ -15,8 +15,10 @@ typedef void (^ODACourseResultCompleteBlock)(BOOL success, ODACourseResult *cour
 
 @interface ODACourseResultsClient : ODAAbstractClient
 
+// Get a specific course result by its id.
 - (void)getById:(NSString *)courseResultId onComplete:(ODACourseResultCompleteBlock)complete;
 
+// Get a list of course results for a particular person
 - (void)getCourseResultsByPerson:(NSString *)personId params:(ODAParameters *)params onComplete:(ODAListCompleteBlock)complete;
 
 @end

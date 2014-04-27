@@ -15,8 +15,10 @@ typedef void (^ODATestResultCompleteBlock)(BOOL success, ODATestResult *testResu
 
 @interface ODATestResultsClient : ODAAbstractClient
 
+// Get a specific test result by its id.
 - (void)getById:(NSString *)testResultId onComplete:(ODATestResultCompleteBlock)complete;
 
+// Get all test results of a particular person
 - (void)getTestResultsByPerson:(NSString *)personId params:(ODAParameters *)params onComplete:(ODAListCompleteBlock)complete;
 
 @end

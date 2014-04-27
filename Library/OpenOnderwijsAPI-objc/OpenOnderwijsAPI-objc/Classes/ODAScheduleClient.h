@@ -13,9 +13,11 @@
 
 typedef void (^ODAScheduleCompleteBlock)(BOOL success, ODALesson *schedule);
 
+// Note, the individual items of a schedule are called 'lessons'.
 @interface ODAScheduleClient : ODAAbstractClient
 
-- (void)getById:(NSString *)scheduleId onComplete:(ODAScheduleCompleteBlock)complete;
+// Get a specific lesson by its id.
+- (void)getById:(NSString *)lessonId onComplete:(ODAScheduleCompleteBlock)complete;
 
 - (void)getScheduleByPerson:(NSString *)personId params:(ODAParameters *)params onComplete:(ODAListCompleteBlock)complete;
 

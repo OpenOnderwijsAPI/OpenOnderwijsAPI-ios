@@ -14,6 +14,7 @@ typedef void (^ODAGroupCompleteBlock)(BOOL success, ODAGroup *group);
 
 @interface ODAGroupsClient : ODAAbstractClient
 
+// Get a specific group by its id.
 - (void)getById:(NSString *)groupId onComplete:(ODAGroupCompleteBlock)complete;
 
 @end
