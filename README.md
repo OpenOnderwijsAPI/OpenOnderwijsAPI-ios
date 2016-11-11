@@ -1,6 +1,12 @@
 OpenOnderwijsAPI-ios
 ====================
 
+## Deprecation notice
+
+**This SDK is outdated and will not be maintained. Please use the [API specification](https://github.com/open-education-api/specification).**  
+
+---
+
 This is the OpenOnderwijsAPI client for iOS apps.
 
 Setup
